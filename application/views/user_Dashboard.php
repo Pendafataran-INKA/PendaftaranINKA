@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mamba Bootstrap Template - Index</title>
+  <title>Pendaftaran Praktek INKA</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -41,15 +41,14 @@
   <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
-        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="icofont-phone"></i> +1 5589 55488 55
+        <i class="icofont-envelope"></i><a href="mailto:sekretariat@inka.co.id">sekretariat@inka.co.id</a>
+        <i class="icofont-phone"></i> (0351) 452271-74
       </div>
       <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="skype"><i class="icofont-skype"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="https://twitter.com/ptinka" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="https://web.facebook.com/ptinkapersero" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="https://www.instagram.com/pt_inka/" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="https://id.linkedin.com/company/pt-industri-kereta-api" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -59,9 +58,13 @@
     <div class="container">
 
       <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>inka</span></a></h1>
+      
+      <a href="<?= base_url(''); ?>"><img src="assets_user/assets/img/inka_logo.png" alt="" class="img-fluid"> 
+
+      </a>
+      
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
@@ -95,9 +98,8 @@
           <div class="carousel-item active" style="background-image: url('assets_user/assets/img/slide/2b.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Welcome to <span>Heaven</span></h2>
-                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+                <h2 class="animated fadeInDown">Pendaftaran Praktek Kerja lapang <span> (PKL)</span></h2>
+                <p class="animated fadeInUp">Praktek Kerja Lapang di buka khusus untuk mahasiswa dari perguruan tinggi yang ingin melakukan praktek kerja lapang di INKA.</p>
               </div>
             </div>
           </div>
@@ -106,9 +108,8 @@
           <div class="carousel-item" style="background-image: url('assets_user/assets/img/slide/slide-2.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+                <h2 class="animated fadeInDown">Pendaftaran Praktek Kerja Industri (PRAKERIN)</h2>
+                <p class="animated fadeInUp">Praktek Kerja Lapang di buka khusus untuk siswa/siswi dari sekolah menengah kejuruan (SMK) yang ingin melakukan praktek kerja di INKA.</p>
               </div>
             </div>
           </div>
@@ -117,9 +118,9 @@
           <div class="carousel-item" style="background-image: url('assets_user/assets/img/slide/slide-3.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+                <h2 class="animated fadeInDown">PERSYARATAN UMUM</h2>
+                <p class="animated fadeInUp">Ada pula persyaratan umum yang perlu di ketahui dan di penuhi sebelum mendaftar untuk kerja praktek di INKA.</p>
+                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Tampilkan</a>
               </div>
             </div>
           </div>
@@ -143,29 +144,26 @@
 
    
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- ======= Shortcut Section ======= -->
+    <section id="shortcut" class="services">
       <div class="container">
 
         <div class="section-title">
-          <h2>Services</h2>
+          <h2>Jalur Pintas</h2>
         </div>
 
         <div class="row">
             <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="icofont-computer"></i></div>
             <h4 class="title"><a href="">Alur Pendaftar SMK</a></h4>
-            <p class="description">Alur pendaftaran praktek kerja industri (PRAKERIN) SMK</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="250">
             <div class="icon"><i class="icofont-computer"></i></div>
             <h4 class="title"><a href="">Alur Pendaftar PKL</a></h4>
-            <p class="description">Alur pendaftaran praktek kerja Lapang (PKL) Perguruan Tinggi</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
             <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h4 class="title"><a href="">Persyaratan Umum</a></h4>
-            <p class="description">Pendaftar perlu memenuhi ketentuan yang ada sebagai persyaratan untuk mendafatar </p>
+            <h4 class="title"><a href="">Persyaratan Umum</a></h4>  
           </div>
         </div>
 
