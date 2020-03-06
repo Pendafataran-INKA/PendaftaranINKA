@@ -95,7 +95,7 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets_user/assets/img/slide/2b.jpg');">
+          <div class="carousel-item active" style="background-image: url('assets_user/assets/img/slide/slide-1.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animated fadeInDown">Pendaftaran Praktek Kerja lapang <span> (PKL)</span></h2>
@@ -149,7 +149,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Jalur Pintas</h2>
+          <h2>ALUR PENDAFTAR</h2>
         </div>
 
         <div class="row">
@@ -180,12 +180,13 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Mamba</h3>
+            <h3>INKA</h3>
             <p>
-              A108 Adam Street <br>
-              NY 535022, USA<br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Jl. Yos Sudarso No. 71 <br>
+              Madiun 63122, Jawa Timur <br><br>
+              <strong>Phone:</strong> (0351) 452271-74<br>
+              <strong>Fax:</strong>  (0351) 452275<br>
+              <strong>Email:</strong> sekretariat@inka.co.id<br>
             </p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -197,33 +198,25 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4 align="right">PINTASAN</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Pengumuman</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Dokumen Pernyataan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>MENU</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Alur</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Login</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            <h4>COMMITTED TO EXCELLENT</h4>
+            <p>Create an integrated solution for railway and urban transportation with competitive advantages in business and the appropriate of product technology to encourage the development of sustainable transport.</p>
 
           </div>
 
