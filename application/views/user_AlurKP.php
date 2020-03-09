@@ -27,12 +27,7 @@
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url ('assets_user/assets/css/style.css') ?>" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Mamba - v2.0.1
-  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -53,23 +48,26 @@
     </div>
   </section>
 
-  <!-- ======= Header ======= -->
+<!-- ======= Header ======= -->
+      <!-- .nav-menu -->
   <header id="header">
     <div class="container">
 
       <div class="logo float-left">
       
       <a href="<?= base_url(''); ?>"><img src="assets_user/assets/img/inka_logo.png" alt="" class="img-fluid"> 
+
       </a>
+      
+        
       </div>
 
-      <!-- .nav-menu -->
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#header">Beranda</a></li>
-          <li><a href="<?= base_url('user_Pengumuman'); ?>">Pengumuman</a></li>
+          <li><a href="<?= base_url(''); ?>">Beranda</a></li>
+          <li class=""><a href="<?= base_url('user_Pengumuman'); ?>">Pengumuman</a></li>
           <li><a href="<?= base_url('user_Pernyataan'); ?>">Dokumen Pernyataan</a></li>
-          <li class="drop-down"><a href="">Alur</a>
+          <li class="drop-down active"><a href="">Alur</a>
             <ul>
               <li><a href="<?= base_url('user_AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
               <li><a href="<?= base_url('user_AlurKP'); ?>">Pendaftaran PKL</a></li>
@@ -78,100 +76,37 @@
           <li><a href="<?= base_url('admin_Dashboard'); ?>">Login</a></li>
         </ul>
       </nav>
-      <!-- .nav-menu -->
-
     </div>
-  </header><!-- End Header -->
+  </header>
+<!-- End Header -->
 
-  <!-- ======= SLIDE Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+<!-- Body -->
+    <!-- Judul Halaman-->
+<section id="pengumuman" class="services">
+  <center>
+        <h1 class="title4">
+          <strong>ALUR PENDAFTARAN PRAKTEK KERJA LAPANG (PKL)</strong>
+        </h1>
+  </center>
+   </section>
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets_user/assets/img/slide/slide-1.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Pendaftaran Praktek Kerja lapang <span> (PKL)</span></h2>
-                <p class="animated fadeInUp">Praktek Kerja Lapang di buka khusus untuk mahasiswa dari perguruan tinggi yang ingin melakukan praktek kerja lapang di INKA.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url('assets_user/assets/img/slide/slide-2.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Pendaftaran Praktek Kerja Industri (PRAKERIN)</h2>
-                <p class="animated fadeInUp">Praktek Kerja Lapang di buka khusus untuk siswa/siswi dari sekolah menengah kejuruan (SMK) yang ingin melakukan praktek kerja di INKA.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url('assets_user/assets/img/slide/slide-3.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animated fadeInDown">PERSYARATAN UMUM</h2>
-                <p class="animated fadeInUp">Ada pula persyaratan umum yang perlu di ketahui dan di penuhi sebelum mendaftar untuk kerja praktek di INKA.</p>
-                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Tampilkan</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
-      </div>
-    </div>
-  </section><!-- End SLIDE -->
-
-  <main id="main">
-
-   
-
-    <!-- ======= Shortcut Section ======= -->
-    <section id="shortcut" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>ALUR & PERSYARATAN UMUM</h2>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Alur Pendaftar SMK</a></h4>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="250">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Alur Pendaftar PKL</a></h4>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h4 class="title"><a href="">Persyaratan Umum</a></h4>  
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
+   <!--Gambar Alur-->
+   <center>
+   <img class="gambar_alur" src="assets_user/assets/img/Alur_PKL.png">  
+   </center>
     
-  </main><!-- End #main -->
+  </BR>
+  </BR>
 
-  <!-- ======= Footer ======= -->
+<!-- End Body -->
+
+
+     
+
+  </main>
+<!-- End #main -->
+
+ <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">

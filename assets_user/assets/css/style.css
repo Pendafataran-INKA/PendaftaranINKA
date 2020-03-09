@@ -341,6 +341,15 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.gambar_alur{
+  width:1100px;
+  height:500px;
+}
+
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -864,7 +873,7 @@ table tr:hover td {
   width: 80px;
   height: 80px;
   margin-bottom: 20px;
-  background: #A62210;
+  background: rgba(166,34,16,1); /* a = opacity (transparansi) max 1, min 0 */
   border-radius: 50%;
   transition: 0.5s;
   color: #ffffff;
@@ -938,6 +947,70 @@ table tr:hover td {
   background: #ff0000;
   bottom: 0;
   left: calc(40% - 50px);
+}
+.services .title2 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 36px;
+  position: relative;
+  padding-bottom: 15px;
+  color: #000;
+}
+
+.services .title3 a {
+  color: #ff0000;
+  transition: 0.3s;
+}
+
+.services .title3 a:hover {
+  color: #ff0000;
+}
+
+.services .title3::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1000px;
+  height: 2px;
+  background: #ff0000;
+  bottom: 0;
+  left: calc(20% - 50px);
+}
+.services .title3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 36px;
+  position: relative;
+  padding-bottom: 15px;
+  color: #000;
+}
+
+.services .title4 a {
+  color: #ff0000;
+  transition: 0.3s;
+}
+
+.services .title4 a:hover {
+  color: #ff0000;
+}
+
+.services .title4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 800px;
+  height: 2px;
+  background: #ff0000;
+  bottom: 0;
+  left: calc(25% - 25px);
+}
+.services .title4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 36px;
+  position: relative;
+  padding-bottom: 15px;
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -1157,6 +1230,10 @@ table tr:hover td {
   margin-bottom: 15px;
   color: #1f3548;
 }
+/*-------------------------------------------------------------
+          POP UP LOGIN
+-------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 # Contact Us
