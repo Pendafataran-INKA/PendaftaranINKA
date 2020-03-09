@@ -212,6 +212,7 @@ svg {
 }
 
 table {
+text-align: center;
   border-collapse: collapse;
 }
 
@@ -224,7 +225,7 @@ caption {
 }
 
 th {
-  text-align: inherit;
+  text-align: center;
 }
 
 label {
@@ -235,6 +236,25 @@ label {
 button {
   border-radius: 0;
 }
+<style media="screen">
+	button {
+		width: 100%;
+		height: 50px;
+	}
+	.left{
+		float: left;
+		display: block;
+	}
+	.right{
+		float: right;
+		display;
+	}
+	.button ul a{
+		padding: 10px;
+		background: rgb(116,181,12);
+		color: white;
+	}
+</style>
 
 button:focus {
   outline: 1px dotted;
@@ -1368,41 +1388,54 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #858796;
+  color: #000000;
 }
 
 .table th,
 .table td {
+  text-align: center;
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #e3e6f0;
+  border-top: 1px solid #000000;
 }
 
 .table thead th {
+  text-align: center;
   vertical-align: bottom;
-  border-bottom: 2px solid #e3e6f0;
+  border-bottom: 2px solid #000000;
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #e3e6f0;
+  border-top: 2px solid #000000;
 }
 
 .table-sm th,
 .table-sm td {
   padding: 0.3rem;
+  text-align: center;
 }
 
 .table-bordered {
-  border: 1px solid #e3e6f0;
+	text-align: center;
+  border: 1px solid #000000;
 }
 
-.table-bordered th,
+.table-bordered th{
+background-color:#000;
+text-align: center;
+color: #fff;
+  border:1px solid #fff;
+}
 .table-bordered td {
-  border: 1px solid #e3e6f0;
+
+text-align: center;
+  border: 1px solid #000000;
 }
 
 .table-bordered thead th,
 .table-bordered thead td {
+backgrond-color:#000;
+text-align: center;
   border-bottom-width: 2px;
 }
 
@@ -1410,6 +1443,7 @@ pre code {
 .table-borderless td,
 .table-borderless thead th,
 .table-borderless tbody + tbody {
+	text-align: center;
   border: 0;
 }
 
@@ -1423,8 +1457,12 @@ pre code {
 }
 
 .table-primary,
-.table-primary > th,
+.table-primary > th{
+	text-align: center;
+	background-color: #000;
+}
 .table-primary > td {
+	text-align: center;
   background-color: #cdd8f6;
 }
 
@@ -1432,6 +1470,7 @@ pre code {
 .table-primary td,
 .table-primary thead th,
 .table-primary tbody + tbody {
+	text-align: center;
   border-color: #a3b6ee;
 }
 
@@ -1441,12 +1480,14 @@ pre code {
 
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
+	text-align: center;
   background-color: #b7c7f2;
 }
 
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
+	text-align: center;
   background-color: #dddde2;
 }
 
@@ -1454,6 +1495,7 @@ pre code {
 .table-secondary td,
 .table-secondary thead th,
 .table-secondary tbody + tbody {
+	text-align: center;
   border-color: #c0c1c8;
 }
 
@@ -1469,6 +1511,7 @@ pre code {
 .table-success,
 .table-success > th,
 .table-success > td {
+	text-align: center;
   background-color: #bff0de;
 }
 
@@ -1622,7 +1665,7 @@ pre code {
 .table .thead-light th {
   color: #6e707e;
   background-color: #eaecf4;
-  border-color: #e3e6f0;
+  border-color: #000000;
 }
 
 .table-dark {
@@ -6292,23 +6335,23 @@ button.bg-dark:focus {
 }
 
 .border {
-  border: 1px solid #e3e6f0 !important;
+  border: 1px solid #000000 !important;
 }
 
 .border-top {
-  border-top: 1px solid #e3e6f0 !important;
+  border-top: 1px solid #000000 !important;
 }
 
 .border-right {
-  border-right: 1px solid #e3e6f0 !important;
+  border-right: 1px solid #000000 !important;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #e3e6f0 !important;
+  border-bottom: 1px solid #000000 !important;
 }
 
 .border-left {
-  border-left: 1px solid #e3e6f0 !important;
+  border-left: 1px solid #000000 !important;
 }
 
 .border-0 {
@@ -9529,10 +9572,13 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+	text-align: center;
+    background-color: #000000 !important;
   }
   .table-bordered th,
   .table-bordered td {
+background-color: #000;
+	  text-align: center;
     border: 1px solid #dddfeb !important;
   }
   .table-dark {
@@ -9542,11 +9588,11 @@ a.text-dark:hover, a.text-dark:focus {
   .table-dark td,
   .table-dark thead th,
   .table-dark tbody + tbody {
-    border-color: #e3e6f0;
+    border-color: #000000;
   }
   .table .thead-dark th {
     color: inherit;
-    border-color: #e3e6f0;
+    border-color: #000000;
   }
 }
 
@@ -9666,11 +9712,11 @@ a:focus {
   animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
 }
 
-.bg-gradient-primary {
+/*.bg-gradient-primary {
   background-color: #4e73df;
   background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
   background-size: cover;
-}
+}*/
 
 .bg-gradient-secondary {
   background-color: #858796;
@@ -9708,8 +9754,8 @@ a:focus {
   background-size: cover;
 }
 
-.bg-gradient-dark {
-  background-color: #5a5c69;
+.bg-gradient-primary {
+  background-color: #3b3938;
   background-image: linear-gradient(180deg, #5a5c69 10%, #373840 100%);
   background-size: cover;
 }
@@ -9944,7 +9990,7 @@ a:focus {
 }
 
 .topbar #sidebarToggleTop:hover {
-  background-color: #eaecf4;
+  background-color: #fff;
 }
 
 .topbar #sidebarToggleTop:active {
@@ -10151,12 +10197,12 @@ a:focus {
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item:hover,
 .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover {
-  background-color: #eaecf4;
+  background-color: #dcdcdc;
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item:active,
 .sidebar .nav-item .collapsing .collapse-inner .collapse-item:active {
-  background-color: #dddfeb;
+  background-color: #dcdcdc;
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
@@ -10349,7 +10395,7 @@ a:focus {
 }
 
 .sidebar-light .sidebar-brand {
-  color: #6e707e;
+  color: #000000;
 }
 
 .sidebar-light hr.sidebar-divider {
@@ -10411,7 +10457,7 @@ a:focus {
 .sidebar-dark .sidebar-heading {
   color: rgba(255, 255, 255, 0.4);
 }
-
+/*-- TULISAN PINGGIR--*/
 .sidebar-dark .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -10421,15 +10467,15 @@ a:focus {
 }
 
 .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover {
-  color: #fff;
+  color: #FF0000;
 }
 
 .sidebar-dark .nav-item .nav-link:active i, .sidebar-dark .nav-item .nav-link:focus i, .sidebar-dark .nav-item .nav-link:hover i {
-  color: #fff;
+  color: #fF0000;
 }
 
 .sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after {
-  color: rgba(255, 255, 255, 0.5);
+  color: #FFF;
 }
 
 .sidebar-dark .nav-item.active .nav-link {
