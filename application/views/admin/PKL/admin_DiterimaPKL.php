@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  
+
 
   <title>INKA - Admin</title>
 
@@ -17,8 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="<?php echo base_url ('assets/css/sb-admin-2.min.css') ?>" rel="stylesheet">
-  <link href="<?php echo base_url ('assets/css/sb-admin-2.css') ?>" rel="stylesheet">
+ <link href="<?php echo base_url ('assets/css/sb-admin-2.css') ?>" rel="stylesheet">
 
 </head>
 
@@ -66,7 +65,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
             <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_PendaftarPSG">Pendaftar</a>
-            <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_DiterimaPSG">Diterima</a>
+            <a class="collapse-item active" href="<?php echo base_url()?>admin/PSG/admin_DiterimaPSG">Diterima</a>
           </div>
         </div>
       </li>
@@ -153,7 +152,7 @@
           <!-- Topbar Search -->
 		  <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-            <h>List Pendaftar</h>
+            <h>List Pendaftar Diterima</h>
             </div>
           </form>
           
@@ -181,7 +180,8 @@
               </div>
             </li>
 
-           <!-- Nav Item - Alerts -->
+            
+             <!-- Nav Item - Alerts -->
             
               <!-- Dropdown - Alerts -->
               
@@ -229,19 +229,29 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
+		 <div class="container justify-content-between mb-4">
 		  
-		   <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <a class=" btn btn-outline-primary btn-lg" href="<?php echo base_url()?>admin/PSG/admin_DiterimaPSG">Prakerin</a>
+			<a class=" btn btn-outline-primary active btn-lg" href="<?php echo base_url()?>admin/PKL/admin_DiterimaPKL">KP</a>
+          </div>
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
+              <input type="text" class="form-control bg-light border-1 small" placeholder="Cari Data" aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
               </div>
             </div>
-		</form>		  
-            <a href="#" class="d-none d-sm-inline-block btn btn-slg btn-primary shadow-lg">Tambah</a>
-          </div>
-		  
 			
-		<!-- Content Row -->
+          </form>	
+            <h4>58/40</h4>
+			
+          </div>
+			
+		  <!-- Content Row -->
 
           <div class="row">
 
@@ -254,30 +264,33 @@
 						<thead>
 							<tr>
 								<th>No</th>
-								<th>Username</th>
-								<th>Email</th>
-								<th>Aksi</th>
+								<th>Nama</th>
+								<th>Perguruan Tinggi</th>
+								<th>Jurusan</th>
+								<th>Periode</th>
+								<th>Penempatan</th>
+								<th>Status</th>
 							</tr>
 						</thead>
 						
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td>Admin01</td>
-								<td>Admin01@mail.com</td>
-								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
+								<td>Ladeta Okta Verawan</td>
+								<td>Politeknik Negeri Jember</td>
+								<td>Teknik Mesin</td>
+								<td>2</td>
+								<td>Perakitan</td>
+								<td>Belum Daftar Ulang</td>
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>Admin02</td>
-								<td>Admin02@mail.com</td>
-								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Admin03</td>
-								<td>Admin03@mail.com</td>
-								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
+								<td>Rifqi Hakim Ariesdianto</td>
+								<td>Universitas Malang</td>
+								<td>Administrasi Perkantoran</td>
+								<td>1</td>
+								<td>Human Capital</td>
+								<td>Sudah Daftar Ulang</td>
 							</tr>
 						</tbody>
 					</table>

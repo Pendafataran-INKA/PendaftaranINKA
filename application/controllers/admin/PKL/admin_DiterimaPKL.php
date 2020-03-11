@@ -1,6 +1,6 @@
 <?php
 
-class admin_Pendaftar extends CI_Controller {
+class admin_DiterimaPKL extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -9,6 +9,6 @@ class admin_Pendaftar extends CI_Controller {
 	public function index()
 	{
 		//load view admin/overview.php
-		$this->load->view("admin/admin_Pendaftar");
+		$this->load->view("admin/PKL/admin_DiterimaPKL");
 	}
 }

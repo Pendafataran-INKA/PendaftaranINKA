@@ -65,7 +65,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
-            <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_PendaftarPSG">Pendaftar</a>
+           <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_PendaftarPSG">Pendaftar</a>
             <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_DiterimaPSG">Diterima</a>
           </div>
         </div>
@@ -114,7 +114,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu:</h6>
             <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_BerkasPSG">Berkas Pendaftar</a>
-            <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_PersyaratanPSG">Persyaratan Umum</a>
+            <a class="collapse-item active" href="<?php echo base_url()?>admin/PSG/admin_PersyaratanPSG">Persyaratan Umum</a>
           </div>
         </div>
       </li>
@@ -181,7 +181,7 @@
               </div>
             </li>
 
-           <!-- Nav Item - Alerts -->
+            <!-- Nav Item - Alerts -->
             
               <!-- Dropdown - Alerts -->
               
@@ -230,14 +230,22 @@
 
           <!-- Page Heading -->
 		  
-		   <div class="d-sm-flex align-items-center justify-content-between mb-4">
+		   <div class="container justify-content-between mb-4">
+		  
+            <a class=" btn btn-outline-primary active btn-lg" href="<?php echo base_url()?>admin/PSG/admin_PersyaratanPSG">Prakerin</a>
+			<a class=" btn btn-outline-primary btn-lg" href="<?php echo base_url()?>admin/PKL/admin_PersyaratanPKL">KP</a>
+          </div>
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
+              
               <div class="input-group-append">
+                
               </div>
             </div>
-		</form>		  
-            <a href="#" class="d-none d-sm-inline-block btn btn-slg btn-primary shadow-lg">Tambah</a>
+         </form>	
+          <a href="#" class="d-none d-sm-inline-block btn btn-slg btn-primary shadow-lg">Tambah</a>	
           </div>
 		  
 			
@@ -254,31 +262,30 @@
 						<thead>
 							<tr>
 								<th>No</th>
-								<th>Username</th>
-								<th>Email</th>
-								<th>Aksi</th>
+								<th>Persyaratan Umum</th>
+								<th colspan="2">Aksi</th>
 							</tr>
 						</thead>
 						
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td>Admin01</td>
-								<td>Admin01@mail.com</td>
+								<td>Warga Negara Indonesia</td>
+								<td><center><a  type="button" class=" btn btn-outline-primary btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Ubah</button></a></center></td>
 								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>Admin02</td>
-								<td>Admin02@mail.com</td>
+								<td>Berstatus Siswa Aktif</td>
+								<td><center><a  type="button" class=" btn btn-outline-primary btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Ubah</button></a></center></td>
 								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
 							</tr>
 							<tr>
 								<td>3</td>
-								<td>Admin03</td>
-								<td>Admin03@mail.com</td>
+								<td>Rata-Rata Nilai Raport Minimal 70</td>
+								<td><center><a  type="button" class=" btn btn-outline-primary btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Ubah</button></a></center></td>
 								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
-							</tr>
+								</tr>
 						</tbody>
 					</table>
                   </div>

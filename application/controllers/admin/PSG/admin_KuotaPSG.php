@@ -1,6 +1,6 @@
 <?php
 
-class admin_Verifikasi extends CI_Controller {
+class admin_KuotaPSG extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -9,6 +9,6 @@ class admin_Verifikasi extends CI_Controller {
 	public function index()
 	{
 		//load view admin/overview.php
-		$this->load->view("admin/admin_Verifikasi");
+		$this->load->view("admin/PSG/admin_KuotaPSG");
 	}
 }

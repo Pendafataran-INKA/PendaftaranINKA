@@ -65,7 +65,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
-            <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_PendaftarPSG">Pendaftar</a>
+           <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_PendaftarPSG">Pendaftar</a>
             <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_DiterimaPSG">Diterima</a>
           </div>
         </div>
@@ -98,8 +98,8 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu:</h6>
-            <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_MasterPeriodePSG">Master Periode</a>
-            <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_KuotaPSG">Kuota</a>
+           <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_MasterPeriodePSG">Master Periode</a>
+            <a class="collapse-item active" href="<?php echo base_url()?>admin/PSG/admin_KuotaPSG">Kuota</a>
           </div>
         </div>
       </li>
@@ -181,7 +181,7 @@
               </div>
             </li>
 
-           <!-- Nav Item - Alerts -->
+            <!-- Nav Item - Alerts -->
             
               <!-- Dropdown - Alerts -->
               
@@ -230,14 +230,32 @@
 
           <!-- Page Heading -->
 		  
-		   <div class="d-sm-flex align-items-center justify-content-between mb-4">
+         
+		  
+		  <div class="container justify-content-between mb-4">
+		  
+            <a class=" btn btn-outline-primary active btn-lg" href="<?php echo base_url()?>admin/PSG/admin_KuotaPSG">Prakerin</a>
+			<a class=" btn btn-outline-primary btn-lg" href="<?php echo base_url()?>admin/PKL/admin_KuotaPKL">KP</a>
+          </div>
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
+              <input type="text" class="form-control bg-light border-1 small" placeholder="Cari Data" aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
               </div>
             </div>
-		</form>		  
-            <a href="#" class="d-none d-sm-inline-block btn btn-slg btn-primary shadow-lg">Tambah</a>
+			<form action="" method="">
+			<select name="Urut">
+			<option>Urut Berdasarkan</option>
+			</select>
+			</form>
+			
+          </form>	
+          <a href="#" class="d-none d-sm-inline-block btn btn-slg btn-primary shadow-lg">Tambah</a>	
           </div>
 		  
 			
@@ -254,29 +272,44 @@
 						<thead>
 							<tr>
 								<th>No</th>
-								<th>Username</th>
-								<th>Email</th>
-								<th>Aksi</th>
+								<th>Jurusan</th>
+								<th>Periode</th>
+								<th>Kuota</th>
+								<th colspan="2">Aksi</th>
 							</tr>
 						</thead>
 						
 						<tbody>
 							<tr>
-								<td>1</td>
-								<td>Admin01</td>
-								<td>Admin01@mail.com</td>
+								<td><center>1</center></td>
+								<td>Teknik Mesin</td>
+								<td><center>1</center></td>
+								<td><center>26</center></td>
+								<td><center><a  type="button" class=" btn btn-outline-primary btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Ubah</button></a></center></td>
 								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
 							</tr>
 							<tr>
-								<td>2</td>
-								<td>Admin02</td>
-								<td>Admin02@mail.com</td>
+								<td><center>2</center></td>
+								<td>Teknik Mesin</td>
+								<td><center>1</center></td>
+								<td><center>20</center></td>
+								<td><center><a  type="button" class=" btn btn-outline-primary btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Ubah</button></a></center></td>
 								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
 							</tr>
 							<tr>
-								<td>3</td>
-								<td>Admin03</td>
-								<td>Admin03@mail.com</td>
+								<td><center>3</center></td>
+								<td>Teknik Mesin</td>
+								<td><center>3</center></td>
+								<td><center>50</center></td>
+								<td><center><a  type="button" class=" btn btn-outline-primary btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Ubah</button></a></center></td>
+								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
+							</tr>
+							<tr>
+								<td><center>4</center></td>
+								<td>Teknik Mesin</td>
+								<td><center>4</center></td>
+								<td><center>50</center></td>
+								<td><center><a  type="button" class=" btn btn-outline-primary btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Ubah</button></a></center></td>
 								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
 							</tr>
 						</tbody>

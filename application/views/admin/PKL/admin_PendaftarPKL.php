@@ -18,7 +18,7 @@
 
   <!-- Custom styles for this template-->
   <link href="<?php echo base_url ('assets/css/sb-admin-2.min.css') ?>" rel="stylesheet">
-  <link href="<?php echo base_url ('assets/css/sb-admin-2.css') ?>" rel="stylesheet">
+ <link href="<?php echo base_url ('assets/css/sb-admin-2.css') ?>" rel="stylesheet">
 
 </head>
 
@@ -65,7 +65,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Menu :</h6>
-            <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_PendaftarPSG">Pendaftar</a>
+            <a class="collapse-item active" href="<?php echo base_url()?>admin/PSG/admin_PendaftarPSG">Pendaftar</a>
             <a class="collapse-item" href="<?php echo base_url()?>admin/PSG/admin_DiterimaPSG">Diterima</a>
           </div>
         </div>
@@ -181,7 +181,7 @@
               </div>
             </li>
 
-           <!-- Nav Item - Alerts -->
+            <!-- Nav Item - Alerts -->
             
               <!-- Dropdown - Alerts -->
               
@@ -230,15 +230,22 @@
 
           <!-- Page Heading -->
 		  
-		   <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+          <div class="container justify-content-between mb-4">
+		  
+            <a class=" btn btn-outline-primary btn-lg" href="<?php echo base_url()?>admin/PSG/admin_PendaftarPSG">Prakerin</a>
+			<a class=" btn btn-outline-primary active btn-lg" href="<?php echo base_url()?>admin/PKL/admin_PendaftarPKL">KP</a>
+          </div>
+		  <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
+              <input type="text" class="form-control bg-light border-1 small" placeholder="Cari Data" aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
               </div>
             </div>
-		</form>		  
-            <a href="#" class="d-none d-sm-inline-block btn btn-slg btn-primary shadow-lg">Tambah</a>
-          </div>
+          </form>
+		   
 		  
 			
 		<!-- Content Row -->
@@ -254,8 +261,10 @@
 						<thead>
 							<tr>
 								<th>No</th>
-								<th>Username</th>
-								<th>Email</th>
+								<th>Nama</th>
+								<th>Perguruan Tinggi</th>
+								<th>Jurusan</th>
+								<th>Periode</th>
 								<th>Aksi</th>
 							</tr>
 						</thead>
@@ -263,21 +272,19 @@
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td>Admin01</td>
-								<td>Admin01@mail.com</td>
-								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
+								<td>Ladeta Okta Verawan</td>
+								<td>Politeknik Negeri Malang</td>
+								<td>Teknik Mesin</td>
+								<td>2</td>
+								<td><center><a  type="button" class=" btn btn-outline-primary btn-sm" href="<?php echo base_url()?>admin/PKL/admin_VerifikasiPKL">Verifikasi</button></center></a></td>
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>Admin02</td>
-								<td>Admin02@mail.com</td>
-								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Admin03</td>
-								<td>Admin03@mail.com</td>
-								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="<?php echo base_url()?>admin_Verifikasi">Hapus</button></a></center></td>
+								<td>Rifqi Hakim Ariesdianto</td>
+								<td>Politeknik Negeri Malang</td>
+								<td>Administrasi Perkantoran</td>
+								<td>1</td>
+								<td><center><a  type="button" class=" btn btn-outline-primary btn-sm" href="<?php echo base_url()?>admin/PKL/admin_VerifikasiPKL">Verifikasi</button></center></a></td>
 							</tr>
 						</tbody>
 					</table>
