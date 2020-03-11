@@ -503,6 +503,43 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Pengumuman Dropdown
 --------------------------------------------------------------*/
+.dropbtn {
+  background-color: #3b3938;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  min-width: 200px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #A62210;}
+
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -873,10 +910,10 @@ table tr:hover td {
   width: 80px;
   height: 80px;
   margin-bottom: 20px;
-  background: rgba(166,34,16,1); /* a = opacity (transparansi) max 1, min 0 */
+  background: rgba(166,34,16,1); /* <<--------------- warna garis ikon #a= opacity (transparansi) max 1, min 0 */
   border-radius: 50%;
   transition: 0.5s;
-  color: #ffffff;
+  color: #ffffff;/*<<--------------- warna garis ikon*/
   font-size: 40px;
   overflow: hidden;
   padding-top: 20px;
@@ -1231,9 +1268,333 @@ table tr:hover td {
   color: #1f3548;
 }
 /*-------------------------------------------------------------
-          POP UP LOGIN
+        LOGIN
 -------------------------------------------------------------*/
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
 
+.bodyL {
+  background:url(https://www.inka.co.id/kcfinder/upload/images/img4.jpg) no-repeat center;
+}
+.login-wrap{
+  width:100%;
+  margin:auto;
+  max-width:525px;
+  min-height:670px;
+  position:relative;
+  
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+  width:100%;
+  height:100%;
+  position:absolute;
+  padding:90px 70px 50px 70px;
+  background:rgba(59,57,56,.9);
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  transform:rotateY(180deg);
+  backface-visibility:hidden;
+  transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+  display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+  text-transform:uppercase;
+
+}
+.login-html .tab{
+  font-size:22px;
+  color:#000;
+  margin-right:15px;
+  padding-bottom:5px;
+  margin:0 15px 10px 0;
+  display:inline-block;
+  border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+  color:#fff;
+  border-color:#ff0000;
+
+}
+.login-form{
+  min-height:345px;
+  position:relative;
+  perspective:1000px;
+  transform-style:preserve-3d;
+}
+.login-form .group{
+  margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+  width:100%;
+  color:#fff;
+  display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+  border:none;
+  padding:15px 20px;
+  border-radius:25px;
+  background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+  text-security:circle;
+  -webkit-text-security:circle;
+}
+.login-form .group .label{
+  color:#aaa;
+  font-size:12px;
+}
+.login-form .group .button{
+  background:#A62210;
+}
+.group .button:hover{
+  background: #3b3938;
+}
+.login-form .group label .icon{
+  width:15px;
+  height:15px;
+  border-radius:2px;
+  position:relative;
+  display:inline-block;
+  background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+  content:'';
+  width:10px;
+  height:2px;
+  background:#fff;
+  position:absolute;
+  transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+  left:3px;
+  width:5px;
+  bottom:6px;
+  transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+  top:6px;
+  right:0;
+  transform:scale(0) rotate(0);
+}
+.login-form .group  label{
+  color:#000;
+}
+.login-form .group .check:checked + label{
+  color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+  background:#ff0000  ;
+}
+.login-form .group .check:checked + label .icon:before{
+  transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+  transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+  transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+  transform:rotate(0);
+}
+
+.hr{
+  height:2px;
+  margin:60px 0 50px 0;
+  background:#000;
+}
+.foot-lnk{
+  text-align:center;
+  color:#fff;
+}
+.foot-lnk a:hover{
+  color:#ff0000;
+}
+
+/*--------------------------------------------------------------
+# Sign Up
+--------------------------------------------------------------*/
+.signup-wrap{
+  width:100%;
+  margin:auto;
+  max-width:525px;
+  min-height:670px;
+  position:relative;
+  
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.signup-html{
+  width:100%;
+  height:100%;
+  position:absolute;
+  padding:90px 70px 50px 70px;
+  background:rgba(59,57,56,.9);
+}
+.signup-html .signup-in-htm,
+.signup-html .signup-up-htm{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  transform:rotateY(180deg);
+  backface-visibility:hidden;
+  transition:all .4s linear;
+}
+.signup-html .sign-in,
+.signup-html .sign-up,
+.signup-form .group .check{
+  display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+  text-transform:uppercase;
+
+}
+.signup-html .tab{
+  font-size:22px;
+  color:#000;
+  margin-right:15px;
+  padding-bottom:5px;
+  margin:0 15px 10px 0;
+  display:inline-block;
+  border-bottom:2px solid transparent;
+}
+.signup-html .sign-in:checked + .tab,
+.signup-html .sign-up:checked + .tab{
+  color:#fff;
+  border-color:#ff0000;
+
+}
+.signup-form{
+  min-height:345px;
+  position:relative;
+  perspective:1000px;
+  transform-style:preserve-3d;
+}
+.signup-form .group{
+  margin-bottom:15px;
+}
+.signup-form .group .label,
+.signup-form .group .input,
+.signup-form .group .button{
+  width:100%;
+  color:#fff;
+  display:block;
+}
+.input2{
+  width:100%;
+  color:#fff;
+  display:block;
+}
+.opsi{
+  width:100%;
+  color:#000;
+  display:block;
+}
+.signup-form .group .input,
+.input2,
+.opsi,
+.signup-form .group .button{
+  border:none;
+  padding:15px 20px;
+  border-radius:25px;
+  background:rgba(255,255,255,.1);
+}
+.signup-form .group input[data-type="password"]{
+  text-security:circle;
+  -webkit-text-security:circle;
+}
+.signup-form .group .label{
+  color:#aaa;
+  font-size:12px;
+}
+.signup-form .group .button{
+  background:#A62210;
+}
+.group .button:hover{
+  background: #3b3938;
+}
+.signup-form .group label .icon{
+  width:15px;
+  height:15px;
+  border-radius:2px;
+  position:relative;
+  display:inline-block;
+  background:rgba(255,255,255,.1);
+}
+.signup-form .group label .icon:before,
+.signup-form .group label .icon:after{
+  content:'';
+  width:10px;
+  height:2px;
+  background:#fff;
+  position:absolute;
+  transition:all .2s ease-in-out 0s;
+}
+.signup-form .group label .icon:before{
+  left:3px;
+  width:5px;
+  bottom:6px;
+  transform:scale(0) rotate(0);
+}
+.signup-form .group label .icon:after{
+  top:6px;
+  right:0;
+  transform:scale(0) rotate(0);
+}
+.signup-form .group .check:checked + label{
+  color:#fff;
+}
+.signup-form .group .check:checked + label .icon{
+  background:#ff0000  ;
+}
+.signup-form .group .check:checked + label .icon:before{
+  transform:scale(1) rotate(45deg);
+}
+.signup-form .group .check:checked + label .icon:after{
+  transform:scale(1) rotate(-45deg);
+}
+.signup-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+  transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+  transform:rotate(0);
+}
+
+.hr2{
+  height:3px;
+  margin:60px 0 50px 0;
+  background:#000;
+}
+.foot-lnk{
+  text-align:center;
+  color:#fff;
+}
+.foot-lnk a:hover{
+  color:#ff0000;
+}
 
 /*--------------------------------------------------------------
 # Contact Us
@@ -1348,24 +1709,6 @@ table tr:hover td {
 
 .contact .php-email-form button[type="submit"]:hover {
   background: #6aa3d5;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 #footer {

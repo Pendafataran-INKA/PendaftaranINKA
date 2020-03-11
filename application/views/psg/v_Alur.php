@@ -65,15 +65,15 @@
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class=""><a href="<?= base_url('user_Pengumuman'); ?>">Pengumuman</a></li>
-          <li><a href="<?= base_url('user_Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li class=""><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
+          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
           <li class="drop-down active"><a href="">Alur</a>
             <ul>
-              <li><a href="<?= base_url('user_AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('user_AlurKP'); ?>">Pendaftaran PKL</a></li>
+              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
             </ul>
           </li>
-          <li><a href="<?= base_url('admin_Dashboard'); ?>">Login</a></li>
+          <li><a href="<?= base_url('Login'); ?>">Log-In</a></li>
         </ul>
       </nav>
     </div>
@@ -84,15 +84,15 @@
     <!-- Judul Halaman-->
 <section id="pengumuman" class="services">
   <center>
-        <h1 class="title4">
-          <strong>ALUR PENDAFTARAN PRAKTEK KERJA LAPANG (PKL)</strong>
+        <h1 class="title3">
+          <strong>ALUR PENDAFTARAN PRAKTEK KERJA INDUSTRI (PRAKERIN)</strong>
         </h1>
   </center>
    </section>
 
    <!--Gambar Alur-->
    <center>
-   <img class="gambar_alur" src="assets_user/assets/img/Alur_PKL.png">  
+   <img class="gambar_alur" src="assets_user/assets/img/Alur_PSG.png">  
    </center>
     
   </BR>
@@ -133,17 +133,17 @@
             <h4 align="right">PINTASAN</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(''); ?>">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_Pengumuman'); ?>">Pengumuman</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>MENU</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_AlurPSG'); ?>">Alur Prakerin</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_AlurKP'); ?>">Alur PKL</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Admin_Dashboard'); ?>">Login</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurPSG'); ?>">Alur Prakerin</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurKP'); ?>">Alur PKL</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Login'); ?>">Login</a></li>
             </ul>
           </div>
 

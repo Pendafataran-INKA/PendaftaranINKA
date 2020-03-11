@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mamba Bootstrap Template - Index</title>
+  <title>Pendaftaran Praktek INKA</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -26,65 +26,93 @@
 
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url ('assets_user/assets/css/style.css') ?>" rel="stylesheet">
- 
-</head>
-<body>
-<section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="icofont-phone"></i> +1 5589 55488 55
-      </div>
-      <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="skype"><i class="icofont-skype"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section>
 
-  <!-- ======= Header ======= -->
+
+</head>
+
+<body class="bodyL">
+
+  <!-- ======= Top Bar ======= -->
+
+
+<!-- ======= Header ======= -->
+      <!-- .nav-menu -->
   <header id="header">
     <div class="container">
 
       <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>Mamba</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      
+      <a href="<?= base_url(''); ?>"><img src="assets_user/assets/img/inka_logo.png" alt="" class="img-fluid"> 
+
+      </a>
+      
+        
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li><a href="<?= base_url(''); ?>">Beranda</a></li>
+          <li class=""><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
+          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li class="drop-down"><a href="">Alur</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="<?= base_url('coba'); ?>">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
+              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li class="active"><a href="<?= base_url('admin_Dashboard'); ?>">Log-In</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
-
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
+<!-- End Header -->
+
+<!-- Body -->
+    <!-- Judul Halaman-->
+<div class="login-wrap" center> 
+  <div class="login-html">
+
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Masuk / LOGIN</label>
+    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+    <div class="login-form">
+      <div class="sign-in-htm">
+        <div class="group">
+          <label for="user" class="label"><strong>Email</strong></label>
+          <input id="user" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="pass" class="label"><strong>Password</strong></label>
+          <input id="pass" type="password" class="input" data-type="password">
+        </div>
+        <div class="group">
+          <input id="check" type="checkbox" class="check" checked>
+          <label for="check"><span class="icon"></span> Keep me Signed in</label>
+        </div>
+        <div class="group" >
+          <a class="button" href="<?= base_url('admin_Dashboard'); ?>" ><center> Masuk</center> </a>
+        </div>
+        <div class="hr"></div>
+        <div class="foot-lnk">
+          <a href="<?= base_url('Daftar'); ?>">Belum Memiliki Akun</a>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Body -->
+
+
+     
+
+  </main>
+<!-- End #main -->
+
+
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="<?php echo base_url ('assets_user/assets/vendor/jquery/jquery.min.js') ?>"></script>
@@ -100,5 +128,7 @@
 
   <!-- Template Main JS File -->
   <script src="<?php echo base_url('assets_user/assets/js/main.js')?>"></script>
-  </body>
-  
+
+</body>
+
+</html>

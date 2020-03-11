@@ -1,6 +1,6 @@
 <?php
 
-class user_AlurKP extends CI_Controller {
+class AlurKP extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -8,7 +8,7 @@ class user_AlurKP extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view("user_AlurKP");
+		$this->load->view("kp/v_Alur");
 		
 	}
 	

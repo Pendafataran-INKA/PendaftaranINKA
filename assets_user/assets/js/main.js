@@ -163,9 +163,7 @@
   });
 
   //pop up login
-  $("span#login, #mask, #pop-up #x").click(function() {
-  $("#mask, #pop-up").toggle("fade", 350);
-});
+  
 
   // Initi AOS
   AOS.init({

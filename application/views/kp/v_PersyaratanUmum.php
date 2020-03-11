@@ -27,7 +27,12 @@
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url ('assets_user/assets/css/style.css') ?>" rel="stylesheet">
 
-
+  <!-- =======================================================
+  * Template Name: Mamba - v2.0.1
+  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
@@ -48,8 +53,7 @@
     </div>
   </section>
 
-<!-- ======= Header ======= -->
-      <!-- .nav-menu -->
+  <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
 
@@ -59,54 +63,122 @@
 
       </a>
       
+        <!-- Uncomment below if you prefer to use an image logo -->
         
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class=""><a href="<?= base_url('user_Pengumuman'); ?>">Pengumuman</a></li>
-          <li><a href="<?= base_url('user_Pernyataan'); ?>">Dokumen Pernyataan</a></li>
-          <li class="drop-down active"><a href="">Alur</a>
+          <li class="active"><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
+          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li class="drop-down"><a href="">Alur</a>
             <ul>
-              <li><a href="<?= base_url('user_AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('user_AlurKP'); ?>">Pendaftaran PKL</a></li>
+              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
             </ul>
           </li>
-          <li><a href="<?= base_url('admin_Dashboard'); ?>">Login</a></li>
+          <li><a href="<?= base_url('Login'); ?>">Log-In</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
-<!-- End Header -->
+      </nav><!-- .nav-menu -->
 
-<!-- Body -->
-    <!-- Judul Halaman-->
+    </div>
+  </header><!-- End Header -->
 <section id="pengumuman" class="services">
   <center>
-        <h1 class="title3">
-          <strong>ALUR PENDAFTARAN PRAKTEK KERJA INDUSTRI (PRAKERIN)</strong>
+        <h1 class="title2">
+          <strong>PERSYARATAN UMUM CALON PENDAFTAR PRAKTIK KERJA
+          </strong>
         </h1>
   </center>
-   </section>
-
-   <!--Gambar Alur-->
-   <center>
-   <img class="gambar_alur" src="assets_user/assets/img/Alur_PSG.png">  
-   </center>
-    
+  <center>
+  
+ <div class="dropdown">
+  <button class="dropbtn">JENIS PRAKTIK</button>
+  <div class="dropdown-content">
+    <a href="<?= base_url('PersyaratanPSG'); ?>">PAKERIN (SMK)</a>
+    <a href="<?= base_url('PersyaratanKP'); ?>">PKL (MAHASISWA)</a>
+  </div>
+</div>
+  </center>
+   </section> 
   </BR>
   </BR>
 
-<!-- End Body -->
 
 
-     
+ <center> <table cellspacing='0'>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>PERSYARATAN UMUM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>1</td>
+        <td>Warga Negara lndonesia (WNI)</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Masih berstatus Mahasiswa aktif</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Nilai IPK sampai dengan semester terakhir minimal 3,00</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Berasal dari Perguruan Tinggi dengan Akreditasi minimal B</td>
+      </tr>
+    </tbody>
+  </table>
+  </center>
+<br>
+<br>
+<br>
+<center><h3><Strong> Berikut adalah daftar dokumen yang di perlukan saat melakukan pendaftaran</strong></h3></center>
+<br>
+  <center> <table cellspacing='0'>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>DOKUMEN PERSYARATAN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>1</td>
+        <td>Scan Kartu Tanda Penduduk (KTP)</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Scan Kartu Tanda Mahasiswa(KTM)</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Scan Transkrip Nilai IPK sampai dengan semester terakhir </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Surat Permohonan Pengajuan PKL dari Kampus</td>
+      </tr>
 
-  </main>
-<!-- End #main -->
+    </tbody>
+  </table>
+  </center>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
 
- <!-- ======= Footer ======= -->
+     <!---END section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -133,17 +205,17 @@
             <h4 align="right">PINTASAN</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(''); ?>">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_Pengumuman'); ?>">Pengumuman</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('PengumumanPSG'); ?>">Pengumuman</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>MENU</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_AlurPSG'); ?>">Alur Prakerin</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_AlurKP'); ?>">Alur PKL</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Admin_Dashboard'); ?>">Login</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurPSG'); ?>">Alur Prakerin</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurKP'); ?>">Alur PKL</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Login'); ?>">Login</a></li>
             </ul>
           </div>
 

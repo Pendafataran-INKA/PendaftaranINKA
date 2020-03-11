@@ -1,6 +1,6 @@
 <?php
 
-class user_Dashboard extends CI_Controller {
+class Login extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -8,7 +8,7 @@ class user_Dashboard extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view("user_Dashboard");
+		$this->load->view("v_Login");
 		
 	}
 	

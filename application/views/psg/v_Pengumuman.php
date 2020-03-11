@@ -60,115 +60,114 @@
       <div class="logo float-left">
       
       <a href="<?= base_url(''); ?>"><img src="assets_user/assets/img/inka_logo.png" alt="" class="img-fluid"> 
+
       </a>
+      
+        <!-- Uncomment below if you prefer to use an image logo -->
+        
       </div>
 
-      <!-- .nav-menu -->
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#header">Beranda</a></li>
-          <li><a href="<?= base_url('user_Pengumuman'); ?>">Pengumuman</a></li>
-          <li><a href="<?= base_url('user_Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li><a href="<?= base_url(''); ?>">Beranda</a></li>
+          <li class="active"><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
+          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
           <li class="drop-down"><a href="">Alur</a>
             <ul>
-              <li><a href="<?= base_url('user_AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('user_AlurKP'); ?>">Pendaftaran PKL</a></li>
+              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
             </ul>
           </li>
-          <li><a href="<?= base_url('admin_Dashboard'); ?>">Login</a></li>
+          <li><a href="<?= base_url('Login'); ?>">Log-In</a></li>
         </ul>
-      </nav>
-      <!-- .nav-menu -->
+      </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
+<section id="pengumuman" class="services">
+  <center>
+        <h1 class="title2">
+          <strong>PENGUMUMAN PENERIMAAN PENDAFTAR
+          </strong>
+        </h1>
+  </center>
+  <center>
+  
+ <div class="dropdown">
+  <button class="dropbtn">JENIS PRAKTIK</button>
+  <div class="dropdown-content">
+    <a href="<?= base_url('Pengumuman'); ?>">PAKERIN (SMK)</a>
+    <a href="<?= base_url('PengumumanKP'); ?>">PKL (MAHASISWA)</a>
+  </div>
+</div>
+  </center>
+   </section> 
+  </BR>
+  </BR>
 
-  <!-- ======= SLIDE Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-        <div class="carousel-inner" role="listbox">
+ <center> <table cellspacing='0'>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Nama Pendafatar</th>
+        <th>Asal Sekolah</th>
+        <th>Jurusan</th>
+        <th>Penempatan</th>
+        <th>Periode</th>
+        <th>Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Faradila Amelia</td>
+        <td>SMKN 1 Kencong</td>
+        <td>Administrasi Perkantoran</td>
+        <td>Infrastruktur Bisnis</td>
+        <td>1</td>
+        <td>2021</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Diki Ariwiyanto</td>
+        <td>SMKN 03 Banyuwangi</td>
+        <td>Akuntansi</td>
+        <td>Devisi Pengembangan</td>
+        <td>1</td>
+        <td>2021</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Fatur Hermawan</td>
+        <td>SMKN Lumajang</td>
+        <td>Multimedia</td>
+        <td>Devisi Multimedia</td>
+        <td>2</td>
+        <td>2021</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Dharma Wijaya</td>
+        <td>SMKN 1 Jember</td>
+        <td>Teknik Mesin</td>
+        <td>Perakitan</td>
+        <td>3</td>
+        <td>2021</td>
+      </tr>
+    </tbody>
+  </table>
+  </center>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
 
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets_user/assets/img/slide/slide-1.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Pendaftaran Praktek Kerja lapang <span> (PKL)</span></h2>
-                <p class="animated fadeInUp">Praktek Kerja Lapang di buka khusus untuk mahasiswa dari perguruan tinggi yang ingin melakukan praktek kerja lapang di INKA.</p>
-              </div>
-            </div>
-          </div>
+     <!---END section -->
 
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url('assets_user/assets/img/slide/slide-2.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Pendaftaran Praktek Kerja Industri (PRAKERIN)</h2>
-                <p class="animated fadeInUp">Praktek Kerja Lapang di buka khusus untuk siswa/siswi dari sekolah menengah kejuruan (SMK) yang ingin melakukan praktek kerja di INKA.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url('assets_user/assets/img/slide/slide-3.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animated fadeInDown">PERSYARATAN UMUM</h2>
-                <p class="animated fadeInUp">Ada pula persyaratan umum yang perlu di ketahui dan di penuhi sebelum mendaftar untuk kerja praktek di INKA.</p>
-                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Tampilkan</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
-      </div>
-    </div>
-  </section><!-- End SLIDE -->
-
-  <main id="main">
-
-   
-
-    <!-- ======= Shortcut Section ======= -->
-    <section id="shortcut" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>ALUR & PERSYARATAN UMUM</h2>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Alur Pendaftar SMK</a></h4>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="250">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Alur Pendaftar PKL</a></h4>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h4 class="title"><a href="">Persyaratan Umum</a></h4>  
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -198,17 +197,17 @@
             <h4 align="right">PINTASAN</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(''); ?>">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_Pengumuman'); ?>">Pengumuman</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('PengumumanPSG'); ?>">Pengumuman</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>MENU</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_AlurPSG'); ?>">Alur Prakerin</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_AlurKP'); ?>">Alur PKL</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Admin_Dashboard'); ?>">Login</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurPSG'); ?>">Alur Prakerin</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurKP'); ?>">Alur PKL</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Login'); ?>">Login</a></li>
             </ul>
           </div>
 

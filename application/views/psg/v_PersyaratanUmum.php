@@ -70,15 +70,15 @@
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class="active"><a href="<?= base_url('user_Pengumuman'); ?>">Pengumuman</a></li>
-          <li><a href="<?= base_url('user_Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li class="active"><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
+          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
           <li class="drop-down"><a href="">Alur</a>
             <ul>
-              <li><a href="<?= base_url('user_AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('user_AlurKP'); ?>">Pendaftaran PKL</a></li>
+              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
             </ul>
           </li>
-          <li><a href="<?= base_url('admin_Dashboard'); ?>">Login</a></li>
+          <li><a href="<?= base_url('Login'); ?>">Log-In</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -87,18 +87,19 @@
 <section id="pengumuman" class="services">
   <center>
         <h1 class="title2">
-          <strong>PENGUMUMAN PENERIMAAN PENDAFTAR
+          <strong>PERSYARATAN UMUM CALON PENDAFTAR PRAKTIK KERJA
           </strong>
         </h1>
   </center>
   <center>
   
-  <p>JENIS PRAKTIK
-  <select>
-        <option> PRAKERIN</option>
-        <option> PKL</option>
-  </select>
-  </p>
+ <div class="dropdown">
+  <button class="dropbtn">JENIS PRAKTIK</button>
+  <div class="dropdown-content">
+    <a href="<?= base_url('PersyaratanPSG'); ?>">PAKERIN (SMK)</a>
+    <a href="<?= base_url('PersyaratanKP'); ?>">PKL (MAHASISWA)</a>
+  </div>
+</div>
   </center>
    </section> 
   </BR>
@@ -110,51 +111,55 @@
     <thead>
       <tr>
         <th>No</th>
-        <th>Nama Pendafatar</th>
-        <th>Asal Sekolah</th>
-        <th>Jurusan</th>
-        <th>Penempatan</th>
-        <th>Periode</th>
-        <th>Tahun</th>
+        <th>PERSYARATAN UMUM</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>1</td>
-        <td>Faradila Amelia</td>
-        <td>SMKN 1 Kencong</td>
-        <td>Administrasi Perkantoran</td>
-        <td>Infrastruktur Bisnis</td>
-        <td>1</td>
-        <td>2020</td>
+      <td>1</td>
+        <td>Warga Negara lndonesia (WNI)</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Diki Ariwiyanto</td>
-        <td>SMKN 03 Banyuwangi</td>
-        <td>Akuntansi</td>
-        <td>Devisi Pengembangan</td>
-        <td>1</td>
-        <td>2020</td>
+        <td>Masih berstatus Siswa SMK aktif</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>Fatur Hermawan</td>
-        <td>SMKN Lumajang</td>
-        <td>Multimedia</td>
-        <td>Devisi Multimedia</td>
+        <td>Nilai Raport s.d semester terakhir rata - rata minimal 7</td>
+      </tr>
+    </tbody>
+  </table>
+  </center>
+  <br>
+<br>
+<br>
+<center><h3><Strong> Berikut adalah daftar dokumen yang di perlukan saat melakukan pendaftaran</strong></h3></center>
+<br>
+  <center> <table cellspacing='0'>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>DOKUMEN PERSYARATAN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>1</td>
+        <td>Scan Surat Pengajuan Prakerin dari Sekolah</td>
+      </tr>
+      <tr>
         <td>2</td>
-        <td>2020</td>
+        <td>Scan Rapor/Rekap Nilai s.d semester terakhir</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Scan Kartu BPJS Kesehatan/Asuransi lainnya</td>
       </tr>
       <tr>
         <td>4</td>
-        <td>Dharma Wijaya</td>
-        <td>SMKN 1 Jember</td>
-        <td>Teknik Mesin</td>
-        <td>Perakitan</td>
-        <td>3</td>
-        <td>2020</td>
+        <td>Scan ttd Bermaterai Surat Pernyataan</td>
       </tr>
+      
     </tbody>
   </table>
   </center>
@@ -196,17 +201,17 @@
             <h4 align="right">PINTASAN</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(''); ?>">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_Pengumuman'); ?>">Pengumuman</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('PengumumanPSG'); ?>">Pengumuman</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>MENU</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_AlurPSG'); ?>">Alur Prakerin</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('user_AlurKP'); ?>">Alur PKL</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Admin_Dashboard'); ?>">Login</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurPSG'); ?>">Alur Prakerin</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurKP'); ?>">Alur PKL</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Login'); ?>">Login</a></li>
             </ul>
           </div>
 
