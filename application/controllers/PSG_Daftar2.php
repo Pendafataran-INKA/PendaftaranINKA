@@ -1,6 +1,6 @@
 <?php
 
-class AlurKP extends CI_Controller {
+class PSG_Daftar2 extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -8,7 +8,9 @@ class AlurKP extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view("kp/v_Alur");
+		$this->load->view("psg/v_Daftar2");
 		
 	}
+
+	
 }

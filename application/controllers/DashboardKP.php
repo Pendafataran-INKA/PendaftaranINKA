@@ -1,6 +1,6 @@
 <?php
 
-class PengumumanKP extends CI_Controller {
+class DashboardKP extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -8,8 +8,9 @@ class PengumumanKP extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view("kp/v_Pengumuman");
+		$this->load->view("kp/v_Dashboard");
 		
 	}
+
 	
 }

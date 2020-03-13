@@ -1,6 +1,6 @@
 <?php
 
-class PersyaratanPSG extends CI_Controller {
+class AlurPSG extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -8,7 +8,7 @@ class PersyaratanPSG extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view("psg/v_PersyaratanUmum");
+		$this->load->view("psg/v_Alur");
 		
 	}
 	

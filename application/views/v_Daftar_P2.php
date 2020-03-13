@@ -43,18 +43,7 @@
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class=""><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
-          <li class="drop-down"><a href="">Alur</a>
-            <ul>
-              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
-            </ul>
-          </li>
-          <li class="active"><a href="<?= base_url('Login'); ?>">Log-In</a></li>
-        </ul>
+        
       </nav>
     </div>
   </header>
@@ -100,7 +89,7 @@
           <label for="check"><span class="icon"></span> Saya Telah Memenuhi persyaratan Diatas</label>
         </div>
         <div class="group" >
-          <a class="button" href="<?= base_url('Daftar_P3'); ?>" ><center> Daftar </center> </a>
+          <a class="button" href="<?= base_url('DaftarAcc/daftar3'); ?>" ><center> Daftar </center> </a>
         </div>
         <div class="hr2"></div>
       </div>

@@ -69,9 +69,14 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class="active"><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li class=""><a href="<?= base_url(''); ?>">Beranda</a></li>
+          <li class="drop-down"><a href="">Pengumuman</a>
+            <ul>
+              <li><a href="<?= base_url('Pengumuman'); ?>">Penerimaan Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
+            </ul>
+          </li>
+        <li class= "active"><a href="<?= base_url('Persyaratan'); ?>">Persyaratan Umum</a></li>
           <li class="drop-down"><a href="">Alur</a>
             <ul>
               <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
@@ -96,8 +101,8 @@
  <div class="dropdown">
   <button class="dropbtn">JENIS PRAKTIK</button>
   <div class="dropdown-content">
-    <a href="<?= base_url('PersyaratanPSG'); ?>">PAKERIN (SMK)</a>
-    <a href="<?= base_url('PersyaratanKP'); ?>">PKL (MAHASISWA)</a>
+    <a href="<?= base_url('Persyaratan'); ?>">PAKERIN (SMK)</a>
+    <a href="<?= base_url('Persyaratan/kp'); ?>">PKL (MAHASISWA)</a>
   </div>
 </div>
   </center>
@@ -121,20 +126,16 @@
       </tr>
       <tr>
         <td>2</td>
-        <td>Masih berstatus Mahasiswa aktif</td>
+        <td>Masih berstatus Siswa SMK aktif</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>Nilai IPK sampai dengan semester terakhir minimal 3,00</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Berasal dari Perguruan Tinggi dengan Akreditasi minimal B</td>
+        <td>Nilai Raport s.d semester terakhir rata - rata minimal 7</td>
       </tr>
     </tbody>
   </table>
   </center>
-<br>
+  <br>
 <br>
 <br>
 <center><h3><Strong> Berikut adalah daftar dokumen yang di perlukan saat melakukan pendaftaran</strong></h3></center>
@@ -149,21 +150,21 @@
     <tbody>
       <tr>
       <td>1</td>
-        <td>Scan Kartu Tanda Penduduk (KTP)</td>
+        <td>Scan Surat Pengajuan Prakerin dari Sekolah</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Scan Kartu Tanda Mahasiswa(KTM)</td>
+        <td>Scan Rapor/Rekap Nilai s.d semester terakhir</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>Scan Transkrip Nilai IPK sampai dengan semester terakhir </td>
+        <td>Scan Kartu BPJS Kesehatan/Asuransi lainnya</td>
       </tr>
       <tr>
         <td>4</td>
-        <td>Surat Permohonan Pengajuan PKL dari Kampus</td>
+        <td>Scan ttd Bermaterai Surat Pernyataan</td>
       </tr>
-
+      
     </tbody>
   </table>
   </center>

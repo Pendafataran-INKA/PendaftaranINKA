@@ -1,6 +1,6 @@
 <?php
 
-class AlurPSG extends CI_Controller {
+class Persyaratan extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -8,13 +8,13 @@ class AlurPSG extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view("psg/v_Alur");
+		$this->load->view("psg/v_Persyaratan");
+		
+	}
+	public function kp()
+	{
+		$this->load->view("kp/v_Persyaratan");
 		
 	}
 	
-	public function kp()
-	{
-		$this->load->view("kp/v_Alur");
-		
-	}
 }

@@ -51,16 +51,21 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class=""><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li class="active"><a href="<?= base_url(''); ?>">Beranda</a></li>
+          <li class="drop-down"><a href="">Pengumuman</a>
+            <ul>
+              <li><a href="<?= base_url('Pengumuman'); ?>">Penerimaan Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
+            </ul>
+          </li>
+          <li><a href="<?= base_url('Persyaratan'); ?>">Persyaratan Umum</a></li>
           <li class="drop-down"><a href="">Alur</a>
             <ul>
               <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
               <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
             </ul>
           </li>
-          <li class="active"><a href="<?= base_url('admin_Dashboard'); ?>">Log-In</a></li>
+          <li><a href="<?= base_url('Login'); ?>">Log-In</a></li>
         </ul>
       </nav>
     </div>
@@ -89,11 +94,13 @@
           <label for="check"><span class="icon"></span> Keep me Signed in</label>
         </div>
         <div class="group" >
-          <a class="button" href="<?= base_url('admin_Dashboard'); ?>" ><center> Masuk</center> </a>
+          <a class="button" href="<?= base_url('admin/admin_Dashboard'); ?>" ><center> Masuk</center> </a>
         </div>
         <div class="hr"></div>
         <div class="foot-lnk">
-          <a href="<?= base_url('Daftar'); ?>">Belum Memiliki Akun</a>
+          <a href="<?= base_url('DaftarACC'); ?>">Belum Memiliki Akun</a>
+           <a href="<?= base_url('DashboardPSG'); ?>">PSG</a>
+           <a href="<?= base_url('DashboardKP'); ?>">KP</a>
         </div>
       </div>
         </div>

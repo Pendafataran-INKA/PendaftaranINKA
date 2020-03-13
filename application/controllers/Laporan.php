@@ -1,6 +1,6 @@
 <?php
 
-class Daftar extends CI_Controller {
+class Laporan extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -8,8 +8,9 @@ class Daftar extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view("v_Daftar");
+		$this->load->view("kp/v_Laporan");
 		
 	}
+
 	
 }

@@ -69,9 +69,14 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class=""><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
-          <li class="active" ><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li class="active"><a href="<?= base_url(''); ?>">Beranda</a></li>
+          <li class="drop-down"><a href="">Pengumuman</a>
+            <ul>
+              <li><a href="<?= base_url('Pengumuman'); ?>">Penerimaan Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
+            </ul>
+          </li>
+          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
           <li class="drop-down"><a href="">Alur</a>
             <ul>
               <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
@@ -87,7 +92,7 @@
 <section id="pengumuman" class="services">
   <center>
         <h1 class="title2">
-          <strong>PERSYARATAN UMUM CALON PENDAFTAR PRAKTIK KERJA
+          <strong>DOKUMEN PERNYATAAN PENDAFTARAN
           </strong>
         </h1>
   </center>

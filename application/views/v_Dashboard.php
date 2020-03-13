@@ -67,8 +67,13 @@
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li class="drop-down"><a href="">Pengumuman</a>
+            <ul>
+              <li><a href="<?= base_url('Pengumuman'); ?>">Penerimaan Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
+            </ul>
+          </li>
+          <li><a href="<?= base_url('Persyaratan'); ?>">Persyaratan Umum</a></li>
           <li class="drop-down"><a href="">Alur</a>
             <ul>
               <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
@@ -161,7 +166,7 @@
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
             <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h4 class="title"><a href="<?= base_url('PersyaratanPSG'); ?>">Persyaratan Umum</a></h4>  
+            <h4 class="title"><a href="<?= base_url('Persyaratan'); ?>">Persyaratan Umum</a></h4>  
           </div>
         </div>
 

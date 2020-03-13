@@ -1,6 +1,6 @@
 <?php
 
-class PersyaratanKP extends CI_Controller {
+class DU_KP extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -8,8 +8,9 @@ class PersyaratanKP extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view("kp/v_PersyaratanUmum");
+		$this->load->view("kp/v_Du");
 		
 	}
+
 	
 }

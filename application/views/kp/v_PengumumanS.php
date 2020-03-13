@@ -38,20 +38,7 @@
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="icofont-envelope"></i><a href="mailto:sekretariat@inka.co.id">sekretariat@inka.co.id</a>
-        <i class="icofont-phone"></i> (0351) 452271-74
-      </div>
-      <div class="social-links float-right">
-        <a href="https://twitter.com/ptinka" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="https://web.facebook.com/ptinkapersero" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/pt_inka/" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://id.linkedin.com/company/pt-industri-kereta-api" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -62,25 +49,20 @@
       <a href="<?= base_url(''); ?>"><img src="assets_user/assets/img/inka_logo.png" alt="" class="img-fluid"> 
 
       </a>
+      
+        <!-- Uncomment below if you prefer to use an image logo -->
+        
       </div>
 
-     <nav class="nav-menu float-right d-none d-lg-block">
+      <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class="drop-down"><a href="">Pengumuman</a>
-            <ul>
-              <li><a href="<?= base_url('Pengumuman'); ?>">Penerimaan Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
-            </ul>
-          </li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
-          <li class="drop-down"><a href="">Alur</a>
-            <ul>
-              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
-            </ul>
-          </li>
-          <li><a href="<?= base_url('Login'); ?>">Log-In</a></li>
+          <li class=""><a href="<?= base_url('DashboardKP'); ?>">Beranda</a></li>
+          <li><a href="<?= base_url('KP_Daftar'); ?>">Pendaftaran Praktik kerja</a></li>
+          <li><a href="<?= base_url('DU_KP'); ?>">Daftar Ulang</a></li>
+          <li><a href="<?= base_url('Laporan'); ?>">Laporan Hasil PKL</a></li>
+          <li class="active"><a href="<?= base_url('Pengumuman/kp'); ?>">Pengumuman</a></li>
+          <li><a href="assets_user/assets/file/DOKUMEN_PERNYATAAN.docx" download>Dokumen Pernyataan</a></li>
+          <li><a href="">User</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -93,7 +75,6 @@
           </strong>
         </h1>
   </center>
-  <!-- MENU DROPDOWN JENIS PRAKTIK-->
   <!--
   <center>
   
@@ -101,7 +82,7 @@
   <button class="dropbtn">JENIS PRAKTIK</button>
   <div class="dropdown-content">
     <a href="<?= base_url('Pengumuman'); ?>">PAKERIN (SMK)</a>
-    <a href="<?= base_url('Pengumuman/pengumumanKP'); ?>">PKL (MAHASISWA)</a>
+    <a href="<?= base_url('PengumumanKP'); ?>">PKL (MAHASISWA)</a>
   </div>
 </div>
   </center>
@@ -117,7 +98,7 @@
       <tr>
         <th>No</th>
         <th>Nama Pendafatar</th>
-        <th>Asal Sekolah</th>
+        <th>Perguruan Tinggi</th>
         <th>Jurusan</th>
         <th>Penempatan</th>
         <th>Periode</th>
@@ -128,25 +109,25 @@
       <tr>
         <td>1</td>
         <td>Faradila Amelia</td>
-        <td>SMKN 1 Kencong</td>
-        <td>Administrasi Perkantoran</td>
+        <td>Universitas Jember</td>
+        <td>Desain Grafis</td>
         <td>Infrastruktur Bisnis</td>
         <td>1</td>
         <td>2021</td>
       </tr>
       <tr>
-        <td>2</td>
+        <td>1</td>
         <td>Diki Ariwiyanto</td>
-        <td>SMKN 03 Banyuwangi</td>
-        <td>Akuntansi</td>
+        <td>Politeknik Negeri Jember</td>
+        <td>Teknik Informatika</td>
         <td>Devisi Pengembangan</td>
         <td>1</td>
         <td>2021</td>
       </tr>
       <tr>
-        <td>3</td>
+        <td>2</td>
         <td>Fatur Hermawan</td>
-        <td>SMKN Lumajang</td>
+        <td>Universitas Indonesia</td>
         <td>Multimedia</td>
         <td>Devisi Multimedia</td>
         <td>2</td>
@@ -155,9 +136,9 @@
       <tr>
         <td>4</td>
         <td>Dharma Wijaya</td>
-        <td>SMKN 1 Jember</td>
-        <td>Teknik Mesin</td>
-        <td>Perakitan</td>
+        <td>Politeknik Negeri Malang</td>
+        <td>Sistem Informasi</td>
+        <td>Devisi Pengembangan</td>
         <td>3</td>
         <td>2021</td>
       </tr>

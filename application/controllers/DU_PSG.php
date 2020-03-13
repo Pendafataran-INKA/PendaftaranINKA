@@ -1,6 +1,6 @@
 <?php
 
-class Daftar_P2 extends CI_Controller {
+class DU_PSG extends CI_Controller {
 	public function _construct()
 	{
 		parent::_construct();
@@ -8,8 +8,9 @@ class Daftar_P2 extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view("v_Daftar_P2");
+		$this->load->view("psg/v_Du");
 		
 	}
+
 	
 }

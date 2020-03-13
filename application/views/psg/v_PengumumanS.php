@@ -38,20 +38,7 @@
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="icofont-envelope"></i><a href="mailto:sekretariat@inka.co.id">sekretariat@inka.co.id</a>
-        <i class="icofont-phone"></i> (0351) 452271-74
-      </div>
-      <div class="social-links float-right">
-        <a href="https://twitter.com/ptinka" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="https://web.facebook.com/ptinkapersero" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/pt_inka/" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://id.linkedin.com/company/pt-industri-kereta-api" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section>
+ 
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -66,23 +53,15 @@
 
      <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class="drop-down"><a href="">Pengumuman</a>
-            <ul>
-              <li><a href="<?= base_url('Pengumuman'); ?>">Penerimaan Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
-            </ul>
-          </li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
-          <li class="drop-down"><a href="">Alur</a>
-            <ul>
-              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
-            </ul>
-          </li>
-          <li><a href="<?= base_url('Login'); ?>">Log-In</a></li>
+          <li class=""><a href="<?= base_url('DashboardPSG'); ?>">Beranda</a></li>
+          <li class=""><a href="<?= base_url('PSG_Daftar'); ?>">Pendaftaran Praktik kerja</a></li>
+          <li class=""><a href="<?= base_url('DU_PSG'); ?>">Daftar Ulang</a></li>
+          <li class="active"><a href="<?= base_url('Pengumuman/psg'); ?>">Pengumuman</a></li>
+          <li><a href="assets_user/assets/file/DOKUMEN_PERNYATAAN.docx" download>Dokumen Pernyataan</a></li>
+          <li><a href="">User</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+      <!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
@@ -199,20 +178,16 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4 align="right">PINTASAN</h4>
+            <h4 align="right">PINTASAN MENU</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(''); ?>">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('PengumumanPSG'); ?>">Pengumuman</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>MENU</h4>
+            <h4 style="visibility: hidden;"> MENU </h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurPSG'); ?>">Alur Prakerin</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurKP'); ?>">Alur PKL</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Login'); ?>">Login</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="assets_user/assets/file/DOKUMEN_PERNYATAAN.docx" download>Dokumen Pernyataan</a></li>
             </ul>
           </div>
 

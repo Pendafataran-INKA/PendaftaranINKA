@@ -69,8 +69,13 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class="active"><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
+          <li class="active"><a href="<?= base_url(''); ?>">Beranda</a></li>
+          <li class="drop-down"><a href="">Pengumuman</a>
+            <ul>
+              <li><a href="<?= base_url('Pengumuman'); ?>">Penerimaan Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
+            </ul>
+          </li>
           <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
           <li class="drop-down"><a href="">Alur</a>
             <ul>
@@ -91,6 +96,7 @@
           </strong>
         </h1>
   </center>
+  <!--
   <center>
   
  <div class="dropdown">
@@ -101,6 +107,7 @@
   </div>
 </div>
   </center>
+  -->
    </section> 
   </BR>
   </BR>

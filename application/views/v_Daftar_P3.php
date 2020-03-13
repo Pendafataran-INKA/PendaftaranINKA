@@ -43,18 +43,7 @@
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class=""><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
-          <li class="drop-down"><a href="">Alur</a>
-            <ul>
-              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
-            </ul>
-          </li>
-          <li class="active"><a href="<?= base_url('Login'); ?>">Log-In</a></li>
-        </ul>
+       
       </nav>
     </div>
   </header>
@@ -65,7 +54,7 @@
     <div class="login-wrap" center> 
     <div class="login-html">
 
-    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Verivikasi Akun Anda</label>
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Verivikasi Email Anda</label>
     <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
 
     <div class="login-form">
@@ -75,7 +64,7 @@
         </div>
   <div class="group">
           <input id="check" type="checkbox" class="check" checked>
-          <label for="check">Mohon cek email anda untuk melanjutkan proses verifikasi</label>
+          <label for="check">Mohon cek email anda untuk melanjutkan proses aktivasi akun.</label>
         </div>
         <br>
         <br>

@@ -62,9 +62,12 @@
       <a href="<?= base_url(''); ?>"><img src="assets_user/assets/img/inka_logo.png" alt="" class="img-fluid"> 
 
       </a>
+      
+        <!-- Uncomment below if you prefer to use an image logo -->
+        
       </div>
 
-     <nav class="nav-menu float-right d-none d-lg-block">
+      <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="<?= base_url(''); ?>">Beranda</a></li>
           <li class="drop-down"><a href="">Pengumuman</a>
@@ -73,7 +76,7 @@
               <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
             </ul>
           </li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li><a href="<?= base_url('Persyaratan'); ?>">Persyaratan Umum</a></li>
           <li class="drop-down"><a href="">Alur</a>
             <ul>
               <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
@@ -89,23 +92,20 @@
 <section id="pengumuman" class="services">
   <center>
         <h1 class="title2">
-          <strong>PENGUMUMAN PENERIMAAN PENDAFTAR
+          <strong>PERSYARATAN UMUM CALON PENDAFTAR PRAKTIK KERJA
           </strong>
         </h1>
   </center>
-  <!-- MENU DROPDOWN JENIS PRAKTIK-->
-  <!--
   <center>
   
  <div class="dropdown">
   <button class="dropbtn">JENIS PRAKTIK</button>
   <div class="dropdown-content">
-    <a href="<?= base_url('Pengumuman'); ?>">PAKERIN (SMK)</a>
-    <a href="<?= base_url('Pengumuman/pengumumanKP'); ?>">PKL (MAHASISWA)</a>
+    <a href="<?= base_url('Persyaratan'); ?>">PAKERIN (SMK)</a>
+    <a href="<?= base_url('Persyaratan/kp'); ?>">PKL (MAHASISWA)</a>
   </div>
 </div>
   </center>
-  -->
    </section> 
   </BR>
   </BR>
@@ -116,51 +116,59 @@
     <thead>
       <tr>
         <th>No</th>
-        <th>Nama Pendafatar</th>
-        <th>Asal Sekolah</th>
-        <th>Jurusan</th>
-        <th>Penempatan</th>
-        <th>Periode</th>
-        <th>Tahun</th>
+        <th>PERSYARATAN UMUM</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>1</td>
-        <td>Faradila Amelia</td>
-        <td>SMKN 1 Kencong</td>
-        <td>Administrasi Perkantoran</td>
-        <td>Infrastruktur Bisnis</td>
-        <td>1</td>
-        <td>2021</td>
+      <td>1</td>
+        <td>Warga Negara lndonesia (WNI)</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Diki Ariwiyanto</td>
-        <td>SMKN 03 Banyuwangi</td>
-        <td>Akuntansi</td>
-        <td>Devisi Pengembangan</td>
-        <td>1</td>
-        <td>2021</td>
+        <td>Masih berstatus Mahasiswa aktif</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>Fatur Hermawan</td>
-        <td>SMKN Lumajang</td>
-        <td>Multimedia</td>
-        <td>Devisi Multimedia</td>
-        <td>2</td>
-        <td>2021</td>
+        <td>Nilai IPK sampai dengan semester terakhir minimal 3,00</td>
       </tr>
       <tr>
         <td>4</td>
-        <td>Dharma Wijaya</td>
-        <td>SMKN 1 Jember</td>
-        <td>Teknik Mesin</td>
-        <td>Perakitan</td>
-        <td>3</td>
-        <td>2021</td>
+        <td>Berasal dari Perguruan Tinggi dengan Akreditasi minimal B</td>
       </tr>
+    </tbody>
+  </table>
+  </center>
+<br>
+<br>
+<br>
+<center><h3><Strong> Berikut adalah daftar dokumen yang di perlukan saat melakukan pendaftaran</strong></h3></center>
+<br>
+  <center> <table cellspacing='0'>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>DOKUMEN PERSYARATAN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>1</td>
+        <td>Scan Kartu Tanda Penduduk (KTP)</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Scan Kartu Tanda Mahasiswa(KTM)</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Scan Transkrip Nilai IPK sampai dengan semester terakhir </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Surat Permohonan Pengajuan PKL dari Kampus</td>
+      </tr>
+
     </tbody>
   </table>
   </center>

@@ -44,16 +44,21 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class=""><a href="<?= base_url('Pengumuman'); ?>">Pengumuman</a></li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
+          <li class="active"><a href="<?= base_url(''); ?>">Beranda</a></li>
+          <li class="drop-down"><a href="">Pengumuman</a>
+            <ul>
+              <li><a href="<?= base_url('Pengumuman'); ?>">Penerimaan Prakerin (SMK)</a></li>
+              <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
+            </ul>
+          </li>
+         <li><a href="<?= base_url('Persyaratan'); ?>">Persyaratan Umum</a></li>
           <li class="drop-down"><a href="">Alur</a>
             <ul>
               <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
               <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
             </ul>
           </li>
-          <li class="active"><a href="<?= base_url('Login'); ?>">Log-In</a></li>
+          <li><a href="<?= base_url('Login'); ?>">Log-In</a></li>
         </ul>
       </nav>
     </div>
@@ -89,7 +94,7 @@
           </select> 
         </div>
         <div class="group" >
-          <a class="button" href="<?= base_url('Daftar_P2'); ?>" ><center> lanjut </center> </a>
+          <a class="button" href="<?= base_url('DaftarAcc/daftar2'); ?>" ><center> lanjut </center> </a>
         </div>
         <div class="hr2"></div>
       </div>

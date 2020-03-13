@@ -1268,6 +1268,257 @@ table tr:hover td {
   color: #1f3548;
 }
 /*-------------------------------------------------------------
+          Form Daftar
+--------------------------------------------------------------*/
+.daftar-wrap{
+  width:100%;
+  margin:auto;
+  max-width:1100px;
+  min-height:700px;
+  position: relative;
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.daftar-wrap2{
+  width:100%;
+  margin:auto;
+  max-width:600px;
+  min-height:800px;
+  position: absolute;
+  top: 80px;
+  right: 800px;
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.daftar-wrap3{
+  width:100%;
+  margin:auto;
+  max-width:600px;
+  min-height:800px;
+  position: relative;
+  top: 10px;
+  right: -350px;
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.daftar-wrap4{
+  width:100%;
+  margin:auto;
+  max-width:600px;
+  min-height:900px;
+  position: absolute;
+  top: 80px;
+  right: 800px;
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.daftar-wrap5{
+  width:100%;
+  margin:auto;
+  max-width:600px;
+  min-height:900px;
+  position: relative;
+  top: 10px;
+  right: -350px;
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.daftar-html{
+  width:100%;
+  height:100%;
+  position:absolute;
+  padding:90px 70px 50px 70px;
+  background:rgba(53,53,53,.9);
+}
+.daftar-html .sign-in-htm,
+.daftar-html .sign-up-htm{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  transform:rotateY(180deg);
+  backface-visibility:hidden;
+  transition:all .4s linear;
+}
+.daftar-html .sign-in,
+.daftar-html .sign-up,
+.daftar-form .group .check{
+  display:none;
+}
+.opsi2{
+  width:100%;
+  color:#000;
+  display:block;
+}
+.daftar-html .tab,
+.daftar-form .group .label,
+.daftar-form .group .button{
+  text-transform:uppercase;
+
+}
+.daftar-html .tab{
+  font-size:22px;
+  color:#000;
+  margin-right:15px;
+  padding-bottom:5px;
+  margin:0 15px 10px 0;
+  display:inline-block;
+  border-bottom:2px solid transparent;
+}
+.daftar-html .sign-in:checked + .tab,
+.daftar-html .sign-up:checked + .tab{
+  color:#fff;
+  border-color:#ff0000;
+
+}
+.daftar-form{
+  min-height:345px;
+  position:relative;
+  perspective:1000px;
+  transform-style:preserve-3d;
+}
+.daftar-form .group{
+  margin-bottom:15px;
+}
+.daftar-form .group .label,
+.daftar-form .group .input3{
+  width:80%;
+  color:#fff;
+  display:block;
+  border-radius:10px;
+
+}
+.daftar-form .group .input4{
+  width:80%;
+  color:#fff;
+  display:block;
+  border-radius:10px;
+
+}
+ .button{
+  width:50%;
+  color:#fff;
+  display:block;
+  border-radius:0px;
+}
+.buttonU{
+  width:30%;
+  color: #fff;
+  display:block;
+  border-radius:0px;
+}
+.daftar-form .group .input4{
+  border-color:#fff;
+  padding:15px 20px;
+  border-radius:10px;
+  background:rgba(0,0,0,.5);
+}
+.daftar-form .group .input3{
+  border-color:#fff;
+  padding:15px 20px;
+  border-radius:10px;
+  background:rgba(0,0,0,.1);
+}
+.opsi2, 
+.daftar-form .group .button{
+  border:none;
+  padding:15px 20px;
+  border-radius:10px;
+  background:rgba(255,255,255,.1);
+}
+.daftar-form .group .buttonU{
+
+  border:none;
+  padding:10px 15px;
+  border-radius:10px;
+  background:rgba(255,255,255,.1);
+}
+.daftar-form .group input[data-type="password"]{
+  text-security:circle;
+  -webkit-text-security:circle;
+}
+.daftar-form .group .label{
+  color:#fff;
+  font-size:15px;
+}
+.daftar-form .group .button{
+  background:#A62210;
+}
+.daftar-form .group .buttonU{
+  
+  background:rgb(48,45,45);
+}
+.daftar-form .group .buttonU:hover{
+  
+  background:#D2C3C3;
+  color:#000;
+}
+.group .button:hover{
+  background: #3b3938;
+}
+.daftar-form .group label .icon{
+  width:15px;
+  height:15px;
+  border-radius:2px;
+  position:relative;
+  display:inline-block;
+  background:rgba(255,255,255,.1);
+}
+.daftar-form .group label .icon:before,
+.daftar-form .group label .icon:after{
+  content:'';
+  width:10px;
+  height:2px;
+  background:#fff;
+  position:absolute;
+  transition:all .2s ease-in-out 0s;
+}
+.daftar-form .group label .icon:before{
+  left:3px;
+  width:5px;
+  bottom:6px;
+  transform:scale(0) rotate(0);
+}
+.daftar-form .group label .icon:after{
+  top:6px;
+  right:0;
+  transform:scale(0) rotate(0);
+}
+.daftar-form .group  label{
+  color:#000;
+}
+.daftar-form .group .check:checked + label{
+  color:#fff;
+}
+.daftar-form .group .check:checked + label .icon{
+  background:#ff0000  ;
+}
+.daftar-form .group .check:checked + label .icon:before{
+  transform:scale(1) rotate(45deg);
+}
+.daftar-form .group .check:checked + label .icon:after{
+  transform:scale(1) rotate(-45deg);
+}
+.daftar-html .sign-in:checked + .tab + .sign-up + .tab + .daftar-form .sign-in-htm{
+  transform:rotate(0);
+}
+.daftar-html .sign-up:checked + .tab + .daftar-form .sign-up-htm{
+  transform:rotate(0);
+}
+
+.hr5{
+  height:3px;
+  margin:60px 0 50px 0;
+  background:#fff;
+}
+.foot-lnk{
+  text-align:center;
+  color:#fff;
+}
+.foot-lnk a {
+  text-align:center;
+  color:#fff;
+}
+.foot-lnk a:hover{
+  color:#ff0000;
+}
+/*-------------------------------------------------------------
         LOGIN
 -------------------------------------------------------------*/
 *,:after,:before{box-sizing:border-box}

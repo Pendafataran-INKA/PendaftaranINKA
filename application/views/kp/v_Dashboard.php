@@ -27,12 +27,7 @@
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url ('assets_user/assets/css/style.css') ?>" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Mamba - v2.0.1
-  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -53,129 +48,61 @@
     </div>
   </section>
 
-  <!-- ======= Header ======= -->
+<!-- ======= Header ======= -->
+      <!-- .nav-menu -->
   <header id="header">
     <div class="container">
 
       <div class="logo float-left">
       
       <a href="<?= base_url(''); ?>"><img src="assets_user/assets/img/inka_logo.png" alt="" class="img-fluid"> 
-
-      </a>
+      </a>        
       </div>
 
-     <nav class="nav-menu float-right d-none d-lg-block">
+      <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class="drop-down"><a href="">Pengumuman</a>
-            <ul>
-              <li><a href="<?= base_url('Pengumuman'); ?>">Penerimaan Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
-            </ul>
-          </li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
-          <li class="drop-down"><a href="">Alur</a>
-            <ul>
-              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
-            </ul>
-          </li>
-          <li><a href="<?= base_url('Login'); ?>">Log-In</a></li>
+          <li class="active"><a href="<?= base_url('DashboardKP'); ?>">Beranda</a></li>
+          <li><a href="<?= base_url('KP_Daftar'); ?>">Pendaftaran Praktik kerja</a></li>
+          <li><a href="<?= base_url('DU_KP'); ?>">Daftar Ulang</a></li>
+          <li><a href="<?= base_url('Laporan'); ?>">Laporan Hasil PKL</a></li>
+          <li class=""><a href="<?= base_url('Pengumuman/kp'); ?>">Pengumuman</a></li>
+          <li><a href="assets_user/assets/file/DOKUMEN_PERNYATAAN.docx" download>Dokumen Pernyataan</a></li>
+          <li><a href="">User</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
 
     </div>
-  </header><!-- End Header -->
-<section id="pengumuman" class="services">
+  </header>
+<!-- End Header -->
+
+<!-- Body -->
+    <!-- Judul Halaman-->
+
+
+  <section id="pengumuman" class="services">
   <center>
-        <h1 class="title2">
-          <strong>PENGUMUMAN PENERIMAAN PENDAFTAR
-          </strong>
+        <h1 class="title4">
+          <strong>ALUR PENDAFTARAN PRAKTEK KERJA LAPANG (PKL)</strong>
         </h1>
   </center>
-  <!-- MENU DROPDOWN JENIS PRAKTIK-->
-  <!--
-  <center>
-  
- <div class="dropdown">
-  <button class="dropbtn">JENIS PRAKTIK</button>
-  <div class="dropdown-content">
-    <a href="<?= base_url('Pengumuman'); ?>">PAKERIN (SMK)</a>
-    <a href="<?= base_url('Pengumuman/pengumumanKP'); ?>">PKL (MAHASISWA)</a>
-  </div>
-</div>
-  </center>
-  -->
-   </section> 
+   </section>
+
+   <!--Gambar Alur-->
+   <center>
+   <img class="gambar_alur" src="assets_user/assets/img/Alur_PKL.png">  
+   </center>
+    
   </BR>
   </BR>
+<!-- End Body -->
 
 
+     
 
- <center> <table cellspacing='0'>
-    <thead>
-      <tr>
-        <th>No</th>
-        <th>Nama Pendafatar</th>
-        <th>Asal Sekolah</th>
-        <th>Jurusan</th>
-        <th>Penempatan</th>
-        <th>Periode</th>
-        <th>Tahun</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Faradila Amelia</td>
-        <td>SMKN 1 Kencong</td>
-        <td>Administrasi Perkantoran</td>
-        <td>Infrastruktur Bisnis</td>
-        <td>1</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Diki Ariwiyanto</td>
-        <td>SMKN 03 Banyuwangi</td>
-        <td>Akuntansi</td>
-        <td>Devisi Pengembangan</td>
-        <td>1</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Fatur Hermawan</td>
-        <td>SMKN Lumajang</td>
-        <td>Multimedia</td>
-        <td>Devisi Multimedia</td>
-        <td>2</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Dharma Wijaya</td>
-        <td>SMKN 1 Jember</td>
-        <td>Teknik Mesin</td>
-        <td>Perakitan</td>
-        <td>3</td>
-        <td>2021</td>
-      </tr>
-    </tbody>
-  </table>
-  </center>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
+  </main>
+<!-- End #main -->
 
-     <!---END section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
+ <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -199,20 +126,16 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4 align="right">PINTASAN</h4>
+            <h4 align="right">PINTASAN MENU</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(''); ?>">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('PengumumanPSG'); ?>">Pengumuman</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>MENU</h4>
+            <h4 style="visibility: hidden;"> MENU </h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurPSG'); ?>">Alur Prakerin</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurKP'); ?>">Alur PKL</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Login'); ?>">Login</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="assets_user/assets/file/DOKUMEN_PERNYATAAN.docx" download>Dokumen Pernyataan</a></li>
             </ul>
           </div>
 

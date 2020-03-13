@@ -27,155 +27,134 @@
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url ('assets_user/assets/css/style.css') ?>" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Mamba - v2.0.1
-  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="icofont-envelope"></i><a href="mailto:sekretariat@inka.co.id">sekretariat@inka.co.id</a>
-        <i class="icofont-phone"></i> (0351) 452271-74
-      </div>
-      <div class="social-links float-right">
-        <a href="https://twitter.com/ptinka" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="https://web.facebook.com/ptinkapersero" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/pt_inka/" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://id.linkedin.com/company/pt-industri-kereta-api" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section>
 
-  <!-- ======= Header ======= -->
+
+<!-- ======= Header ======= -->
+      <!-- .nav-menu -->
   <header id="header">
     <div class="container">
 
       <div class="logo float-left">
       
       <a href="<?= base_url(''); ?>"><img src="assets_user/assets/img/inka_logo.png" alt="" class="img-fluid"> 
-
-      </a>
+      </a>        
       </div>
 
-     <nav class="nav-menu float-right d-none d-lg-block">
+      <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="<?= base_url(''); ?>">Beranda</a></li>
-          <li class="drop-down"><a href="">Pengumuman</a>
-            <ul>
-              <li><a href="<?= base_url('Pengumuman'); ?>">Penerimaan Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('Pengumuman/kp'); ?>">Penerimaan PKL (MAHASISWA)</a></li>
-            </ul>
-          </li>
-          <li><a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
-          <li class="drop-down"><a href="">Alur</a>
-            <ul>
-              <li><a href="<?= base_url('AlurPSG'); ?>">Pendaftaran Prakerin (SMK)</a></li>
-              <li><a href="<?= base_url('AlurKP'); ?>">Pendaftaran PKL</a></li>
-            </ul>
-          </li>
-          <li><a href="<?= base_url('Login'); ?>">Log-In</a></li>
+          <li class=""><a href="<?= base_url('DashboardPSG'); ?>">Beranda</a></li>
+          <li class="active"><a href="<?= base_url('PSG_Daftar'); ?>">Pendaftaran Praktik kerja</a></li>
+          <li><a href="<?= base_url('DU_PSG'); ?>">Daftar Ulang</a></li>
+          <li class=""><a href="<?= base_url('Pengumuman/psg'); ?>">Pengumuman</a></li>
+          <li><a href="assets_user/assets/file/DOKUMEN_PERNYATAAN.docx" download>Dokumen Pernyataan</a></li>
+          <li><a href="">User</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
 
     </div>
-  </header><!-- End Header -->
-<section id="pengumuman" class="services">
-  <center>
-        <h1 class="title2">
-          <strong>PENGUMUMAN PENERIMAAN PENDAFTAR
-          </strong>
-        </h1>
-  </center>
-  <!-- MENU DROPDOWN JENIS PRAKTIK-->
-  <!--
-  <center>
-  
- <div class="dropdown">
-  <button class="dropbtn">JENIS PRAKTIK</button>
-  <div class="dropdown-content">
-    <a href="<?= base_url('Pengumuman'); ?>">PAKERIN (SMK)</a>
-    <a href="<?= base_url('Pengumuman/pengumumanKP'); ?>">PKL (MAHASISWA)</a>
+  </header>
+<!-- End Header -->
+
+<!-- Body -->
+    <!-- Judul Halaman-->
+
+<!--Gambar Alur-->
+   <div class="daftar-wrap3" center> 
+  <div class="daftar-html">
+    
+    <div class="daftar-form">
+      <div class="group">
+      <div class="group">
+         <a class="buttonU" href="" ><center> Pilih File </center> </a>
+          <input id="user" type="text" class="input4" value="Scan Kartu Asuransi .jpg/png" readonly>
+        </div>
+        <div class="group">
+         <a class="buttonU" href="" ><center> Pilih File </center> </a>
+          <input id="user" type="text" class="input4" value="Scan TTD Bermaterai S.Pernyataan .jpg/png" readonly>
+        </div>
+      <br>
+       <label for="user" class="label">Asal Sekolah</label>
+          <select class="input3">
+                  <option class="opsi2" value="">Pilih Provinsi</option>
+                  <option class="opsi2" value="">Pilih Provinsi</option>           
+          </select> 
+          <br>
+          <select class="input3">
+                  <option class="opsi2" value="">Pilih Kabupaten</option>
+                  <option class="opsi2" value="">Pilih Kabupaten</option>           
+          </select>
+          <br> 
+          
+          <select class="input3">
+                  <option class="opsi2" value="">Pilih Sekolah</option>
+                  <option class="opsi2" value="">Pilih Sekolah</option>           
+          </select> 
+          <br>
+          <center>
+        <div class="group" >
+        <br >
+          <a class="button" href="<?= base_url('DashboardPSg'); ?>" ><center> Daftar </center> </a>
+        </div>
+        </center>
+        <div class="hr5"></div>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="daftar-wrap2" center> 
+  <div class="daftar-html">
+
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Pendaftaran Praktek Kerja</label>
+    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+   
+    <div class="daftar-form">
+      <div class="group">
+      <br>
+          <label for="nama" class="label">Nama Lengkap</label>
+          <input id="nama" type="text" class="input3"> 
+          <br>
+          <label for="nama" class="label">Nomor Induk Siswa (NIS)</label>
+          <input id="nama" type="text" class="input3"> 
+          <br> 
+          
+          <label for="nama" class="label">Nilai Rata-Rata Raport</label>
+          <input id="nama" type="text" class="input3">  
+          <br>
+          <div class="group">
+         <a class="buttonU" href="" ><center> Pilih File </center> </a>
+          <input id="user" type="text" class="input4" value="Scan Surat Pengajuan .jpg/png" readonly>
+        </div>
+        <div class="group">
+         <a class="buttonU" href="" ><center> Pilih File </center> </a>
+          <input id="user" type="text" class="input4" value="Scan Rekap Nilai Raport .Pdf" readonly>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-  </center>
-  -->
-   </section> 
+  </div>
+</div>
+
+    
   </BR>
   </BR>
+<!-- End Body -->
 
 
+     
 
- <center> <table cellspacing='0'>
-    <thead>
-      <tr>
-        <th>No</th>
-        <th>Nama Pendafatar</th>
-        <th>Asal Sekolah</th>
-        <th>Jurusan</th>
-        <th>Penempatan</th>
-        <th>Periode</th>
-        <th>Tahun</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Faradila Amelia</td>
-        <td>SMKN 1 Kencong</td>
-        <td>Administrasi Perkantoran</td>
-        <td>Infrastruktur Bisnis</td>
-        <td>1</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Diki Ariwiyanto</td>
-        <td>SMKN 03 Banyuwangi</td>
-        <td>Akuntansi</td>
-        <td>Devisi Pengembangan</td>
-        <td>1</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Fatur Hermawan</td>
-        <td>SMKN Lumajang</td>
-        <td>Multimedia</td>
-        <td>Devisi Multimedia</td>
-        <td>2</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Dharma Wijaya</td>
-        <td>SMKN 1 Jember</td>
-        <td>Teknik Mesin</td>
-        <td>Perakitan</td>
-        <td>3</td>
-        <td>2021</td>
-      </tr>
-    </tbody>
-  </table>
-  </center>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
+  </main>
+<!-- End #main -->
 
-     <!---END section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
+ <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -199,20 +178,16 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4 align="right">PINTASAN</h4>
+            <h4 align="right">PINTASAN MENU</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(''); ?>">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('PengumumanPSG'); ?>">Pengumuman</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Pernyataan'); ?>">Dokumen Pernyataan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>MENU</h4>
+            <h4 style="visibility: hidden;"> MENU </h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurPSG'); ?>">Alur Prakerin</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('AlurKP'); ?>">Alur PKL</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Login'); ?>">Login</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="assets_user/assets/file/DOKUMEN_PERNYATAAN.docx" download>Dokumen Pernyataan</a></li>
             </ul>
           </div>
 
