@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  
 
   <title>INKA - Admin</title>
 
@@ -17,7 +18,7 @@
 
   <!-- Custom styles for this template-->
   <link href="<?php echo base_url ('assets/css/sb-admin-2.min.css') ?>" rel="stylesheet">
- <link href="<?php echo base_url ('assets/css/sb-admin-2.css') ?>" rel="stylesheet">
+  <link href="<?php echo base_url ('assets/css/sb-admin-2.css') ?>" rel="stylesheet">
 
 </head>
 
@@ -145,7 +146,6 @@
 
       <!-- Main Content -->
       <div id="content">
-	  
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -156,16 +156,12 @@
           </button>
 
           <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+		  <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-1 small" placeholder="Cari" aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
+            <h>DATA ADMIN</h>
             </div>
           </form>
+          
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -190,7 +186,7 @@
               </div>
             </li>
 
-            <!-- Nav Item - Alerts -->
+           <!-- Nav Item - Alerts -->
             
               <!-- Dropdown - Alerts -->
               
@@ -200,10 +196,11 @@
                 <!-- Counter - Messages -->
                
               <!-- Dropdown - Messages -->
-              
 
             <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
+            
+              <!-- Dropdown - User Information -->
+              <li class="nav-item dropdown no-arrow">
               <a class="" href="#" id="userDropdown" data-toggle="modal" aria-haspopup="true" aria-expanded="false" data-target="#logoutModal" >
                 <span class="mr-2 d-none d-lg-inline fas fa-sign-out-alt fa-sm fa-fw text-gray-600 large"> Keluar</span>
               </a>
@@ -218,88 +215,63 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">BERANDA</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+		  
+		   <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <div class="input-group-append">
+              </div>
+            </div>
+		</form>		  
+            <a class="d-none d-sm-inline-block btn btn-slg btn-primary shadow-lg" href="<?php echo base_url()?>admin/Dokumen_Admin/Tambah_Admin_Tambah">Tambah</a>
           </div>
+		  
 			
 		<!-- Content Row -->
 
           <div class="row">
 
-            <!-- Area Chart -->
-            <div class="col-xl-8 col-lg-7">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </div>
+            
+                
                 <!-- Card Body -->
                 <div class="card-body">
                   <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
+                    <table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>No</th>
+								<th>Username</th>
+								<th>Email</th>
+								<th>Aksi</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Admin01</td>
+								<td>Admin01@mail.com</td>
+								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="#">Hapus</button></a></center></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Admin02</td>
+								<td>Admin02@mail.com</td>
+								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="#">Hapus</button></a></center></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Admin03</td>
+								<td>Admin03@mail.com</td>
+								<td><center><a  type="button" class=" btn btn-outline-danger btn-sm" href="#">Hapus</button></a></center></td>
+							</tr>
+						</tbody>
+					</table>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <!-- Pie Chart -->
-            <div class="col-xl-4 col-lg-5">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
-                  </div>
-                  <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Direct
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Social
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Referral
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-        <!-- /.container-fluid -->
+              
 
       </div>
-	  
       <!-- End of Main Content -->
 
       <!-- Footer -->
@@ -336,7 +308,7 @@
         <div class="modal-body">Menekan Logout Akan Meninggalkan Sesi Ini</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="<?php echo base_url("")?>">Logout</a>
+          <a class="btn btn-primary" href="<?php echo base_url()?>user_Dashboard">Logout</a>
         </div>
       </div>
     </div>

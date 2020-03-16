@@ -9,6 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+
   <title>INKA - Admin</title>
 
   <!-- Custom fonts for this template-->
@@ -145,7 +146,6 @@
 
       <!-- Main Content -->
       <div id="content">
-	  
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -156,16 +156,12 @@
           </button>
 
           <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+		  <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-1 small" placeholder="Cari" aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
+            <h>TAMBAH DATA SEKOLAH</h>
             </div>
           </form>
+          
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -200,7 +196,6 @@
                 <!-- Counter - Messages -->
                
               <!-- Dropdown - Messages -->
-              
 
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
@@ -218,88 +213,62 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">BERANDA</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-          </div>
+
 			
 		<!-- Content Row -->
 
-          <div class="row">
+        <div class="main-content">
+<div class="section__content section__content--p30">
+    <div class="container-fluid">
+     <form id="form_input_detail">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="au-card m-b-30">
+                    <div class="au-card-inner">
 
-            <!-- Area Chart -->
-            <div class="col-xl-8 col-lg-7">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </div>
+            
+                
                 <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pie Chart -->
-            <div class="col-xl-4 col-lg-5">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                <div class="form-group row">
+                         <div class="col-sm-4" >
+                        <label>Nama Sekolah:</label>
+                        <input type="text" class="form-control" id="nama" name="nama">
                     </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
-                  </div>
-                  <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Direct
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Social
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Referral
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+					<div class="col-sm-4" >
+                        <label>Provinsi:</label>
+                        <input type="text" class="form-control" id="nama" name="nama">
+                    </div>
+                    </div>
 
-          
-        <!-- /.container-fluid -->
+                    <div class="form-group row">
+					<div class="col-sm-4" >
+                        <label >Kabupaten:</label>
+                        <input class="form-control" type="text" id="sekolah" name="sekolah">
+                      </div>
+					  
+					  <div class="form-group ">
+          <label for="pass" class="label2"><strong>Tipe</strong></label>
+          <select class="form-control">
+                  <option class="opsi" value="">Binaan</option>
+                  <option class="opsi" value="">Umum</option>           
+          </select> 
+        </div>
+		</div>
+                    
 
-      </div>
-	  
+                    </div>
+
+
+                    
+                        </form><center>
+						<span class="btn">
+                                    <button class="btn btn-info" type="submit">Tambah</button>
+                                </span>
+                    </center>
+					</div>
+					</div>
+					</div>
+<br><br><br><br><br><br><br><br>
       <!-- End of Main Content -->
 
       <!-- Footer -->
@@ -336,7 +305,7 @@
         <div class="modal-body">Menekan Logout Akan Meninggalkan Sesi Ini</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="<?php echo base_url("")?>">Logout</a>
+          <a class="btn btn-primary" href="<?php echo base_url()?>user_Dashboard">Logout</a>
         </div>
       </div>
     </div>

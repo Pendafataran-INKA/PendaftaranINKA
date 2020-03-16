@@ -78,10 +78,15 @@ hr {
   height: 0;
   overflow: visible;
 }
-
-h1, h2, h3, h4, h5, h6 {
+h3{
   margin-top: 0;
   margin-bottom: 0.5rem;
+  color: #fff;
+}
+h1, h2, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #000;
 }
 
 p {
@@ -231,6 +236,7 @@ th {
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
+  color: #000;
 }
 
 button {
@@ -1763,7 +1769,7 @@ text-align: center;
   color: #6e707e;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #d1d3e2;
+  border: 2px solid #000;
   border-radius: 0.35rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
